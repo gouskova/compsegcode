@@ -395,7 +395,7 @@ def complexify(**kwargs):
                 step = 0
             else:
                 nc.write_insep(temp, os.path.join(wdir, 'inseparability.txt'))
-                msg.tab_render(clusters, message=f'\nFound complex segments on iteration {step}:', outfilepath=ofpth)
+                msg.tab_render(d=clusters, message=f'\nFound complex segments on iteration {step}:', outfilepath=ofpth)
                 newfeats = make_new_feats(feats, get_new_segs(feats, clusters, threshold, outfilepath=ofpth)) 
                 msg.env_render(message="\nChecking learner-generated feature file...\n", outfilepath=ofpth)
                 if not pnc.check_feats(newfeats, outfilepath=ofpth):
