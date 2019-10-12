@@ -47,8 +47,7 @@ def read_feat_file(featfilepath, **kwargs):
 			seglines = [x.strip().split('\t') for x in feats[1:]]
 			return (featnames,seglines)
 	except FileNotFoundError:
-		kwargs['message']=f'could not open {featfilepath}'
-		msg.env_render(**kwargs)
+		msg.env_render(message=f'could not open {featfilepath}', **kwargs)
 		raise SystemExit
 
 def segs_to_feats(featlines, **kwargs):
@@ -271,8 +270,7 @@ def get_vowels(featfilepath, **kwargs):
     elif '+syllabic' in feats:
         return feats['+syllabic']
     else:
-        kwargs['message']=f'\nThe feature file {featfilepath.split("simulation")[1]} does not have a column for +syll or +syllabic. The learner needs this feature to separate vowels from true consonants. Fix this and try again.'
-        msg.env_render(**kwargs)
+        msg.env_render(message = 'f\nThe feature file {featfilepath.split("simulation")[1]} does not have a column for +syll or +syllabic. The learner needs this feature to separate vowels from true consonants. Fix this and try again.', **kwargs)
 
 
 
@@ -287,8 +285,7 @@ def get_vocoids(featfilepath, **kwargs):
     elif '-consonantal' in feats:
         return feats['-consonantal']
     else:
-        kwargs['message']=f'\nThe feature file {featfilepath.split("simulation")[1]} does not have a column for -cons or -consonantal. The learner needs this feature to separate vocoids from true consonants. Fix this and try again.'
-        msg.env_render(**kwargs)
+        msg.env_render(message=f'\nThe feature file {featfilepath.split("simulation")[1]} does not have a column for -cons or -consonantal. The learner needs this feature to separate vocoids from true consonants. Fix this and try again.', **kwargs)
 
 
 def outwrite_classes(featfilepath, outpath):
@@ -331,8 +328,7 @@ def make_custom_proj(feats, featfilepath, outpath, **kwargs):
 	this is a stand-alone function, it opens the feature file rather than be fed pre-read lines
 	'''
 	featl = [x.strip() for x in feats.split(',')]
-	kwargs['message']=f'\n{featl}'
-	msg.env_render(**kwargs)
+	msg.env_render(message=f'\n{featl}', **kwargs)
 	thesegs = feats_to_segs_wrapper(feats, featfilepath)
 	feats_to_project = seglist_to_feats(thesegs, read_feat_file(featfilepath)).append('wb')
 	with open(outpath, 'w', encoding='utf-8') as f:

@@ -139,12 +139,13 @@ def bidir_prob_wrapper(featpath, datapath, **kwargs):
     '''
     a wrapper function for insep. featpath leads to Features.txt, and datapath leads to LearningData.txt
     '''
-    if 'vowels' in kwargs:
+    if 'vowels' in kwargs and kwargs['vowels']:
         msg.env_render(message='\nGetting vocoids...', **kwargs)
-        conslist = pnc.get_vowels(featpath, **kwargs)
+        conslist = pnc.get_vocoids(featpath, **kwargs)
     else:
         msg.env_render(message="\nGetting consonants...", **kwargs)
         conslist = pnc.get_consonants(featpath, **kwargs)
+    msg.env_render(message='\n'+', '.join(conslist)+'\n', **kwargs)
     msg.env_render(message="\nGetting clusters...", **kwargs)
     clustlist = list_clusters(conslist, 2)
     msg.env_render(message="\nCounting clusters...", **kwargs)

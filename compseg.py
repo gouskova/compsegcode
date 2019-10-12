@@ -2,21 +2,20 @@
 # coding: utf-8
 
 '''
-A module that analyzes a Hayes-and-Wilson-formatted LearningData.txt file (given a Features.txt file) and returns segments whose transitional probability looks like that of complex segments.
+A module that analyzes a Hayes-and-Wilson-formatted LearningData.txt file (given a Features.txt file) to identify clusters of segments that have the distributions of complex segments.
 
 creates a new Features.txt file and a new LearningData.txt file
 
-checks the data for consistency and completeness
+checks the data against features and vice versa
 
 To see more, for running from the command line:
 
-$ python3 compseg.py help
+$ python3 compseg.py --help
 
 Or, import the module into python and invoke help there:
 
 >>> import compseg
 >>> help(compseg)
->>> help(compseg.complexify)
 
 '''
 
@@ -173,7 +172,6 @@ def analyze_vocoid_feats(same, differ, segdic):
     the vowel features this function can handle are very conservative, SPE-style.
     '''
     compsegs = {}
-    #things to do here:
     #for glides, override their features in favor of vowels
     for ngram in same:
         seg2_feats = segdic[ngram.split(" ")[1]]
@@ -182,14 +180,26 @@ def analyze_vocoid_feats(same, differ, segdic):
         compsegs[cseg] = same[ngram]
         #glides first: the vowel half wins
         if any([thing.startswith('-syll') for thing in differ[ngram]]):
-            if '+round' in seg2_feats:
-                compsegs[cseg].append('+round') 
-            elif '-back' in seg2_feats:
-                compsegs[cseg].append('-back')
-            elif '-round' in seg2_feats:
-                compseg[cseg].append('-round')
-            #now take all other segs from seg1
-            for ngram in differ:
+            if any([thing.startswith('-syll') for thing in seg1_feats]):
+                feats_to_keep = seg2_feats
+            else:
+                feats_to_keep = seg1_feats
+        #vowel-vowel diphthongs: the lower ones win
+        elif '+low' in differ[ngram]:
+            if '+low' in seg1_feats:
+                feats_to_keep = seg1_feats
+            elif '+low' in seg2_feats:
+                feats_to_keep = seg2_feats
+        elif '+high' in differ[ngram]:
+            if '+high' in seg1_feats:
+                feats_to_keep = seg2_feats
+            elif '+high' in seg2_feats:
+                feats_to_keep = seg2_feats
+        #and otherwise, keep the first one's feats (assume left-dominant dipthongs. this is arbitrary)
+        else:
+            feats_to_keep = seg1_feats 
+        #resolve differences in favor of one value
+        for ngram in differ:
                 feats_to_fix = set([x.lstrip('+-') for x in differ[ngram]])
                 curr_feats = set([x.lstrip('+-') for x in compsegs[cseg]])
                 for feat in feats_to_fix:
@@ -197,11 +207,10 @@ def analyze_vocoid_feats(same, differ, segdic):
                         if ('+'+feat in compsegs[cseg]) or ('-'+feat in compsegs[cseg]):
                             continue
                         else:
-                            if '+'+feat in seg1_feats:
+                            if '+'+feat in feats_to_keep:
                                 compsegs[cseg].append('+'+feat)
-                            elif '-'+feat in seg1_feats:
+                            elif '-'+feat in feats_to_keep:
                                 compsegs[cseg].append('-'+feat)
-    #for vowel-vowel diphthongs, figure out which one is lower, and keep its features in case of conflict
     for thing in compsegs:
         compsegs[thing] = sorted(list(set(compsegs[thing])))
     return compsegs
@@ -209,16 +218,17 @@ def analyze_vocoid_feats(same, differ, segdic):
 
 
 
-def get_new_segs(featpath, compdic, threshold, **kwargs):
+def get_new_segs(featpath, compdic, **kwargs):
     '''
     takes in a feature file and a dictionary of clusters to be converted to complex segs.
     wrapper function.
     {'xy' : [-feat, +feat, ...]}
-
     '''
-    fd = find_diff_feats(compdic, featpath, threshold, **kwargs)
-    return analyze_cons_feats(fd[0], fd[1], fd[2])
-
+    fd = find_diff_feats(compdic, featpath, **kwargs)
+    if 'vowels' in kwargs and kwargs['vowels']==True:
+        return analyze_vocoid_feats(fd[0], fd[1], fd[2])
+    else:
+        return analyze_cons_feats(fd[0], fd[1], fd[2])
 
 def make_new_feats(featpath, compdic, **kwargs): 
     '''
@@ -227,6 +237,12 @@ def make_new_feats(featpath, compdic, **kwargs):
     '''
     featlist = old_feats(featpath, **kwargs)
     segdic = pnc.segs_to_feats(featlist, **kwargs)
+    if 'vowels' in kwargs:
+        vowels=kwargs['vowels']
+    else:
+        vowels=False
+    if vowels and not 'diph' in featlist[0]:
+        featlist.append('diph')
     for seg in compdic:
         segdic[seg] = compdic[seg]
         #first get the missing (zero) feature values
@@ -235,6 +251,8 @@ def make_new_feats(featpath, compdic, **kwargs):
                 segdic[seg].append('0'+feat)
     #then, create an entry in feature dictionary for each segment (old and new)
     for seg in segdic:
+        if vowels:
+            segdic[seg].append('0diph')
         #first, fill in zero feat values for all the old segments
         for feat in featlist[0]:
             if not any([x for x in segdic[seg] if x.endswith(feat)]):
@@ -245,6 +263,8 @@ def make_new_feats(featpath, compdic, **kwargs):
         for pos in range(len(featlist[0])):
             its_line.append([x[0] for x in segdic[seg] if x[1:]==featlist[0][pos]][0])
         featlist[1].append(its_line)
+        if vowels:
+            featlist[1].append('+diph')
     return featlist
 
 def write_new_feats(outpath, featlist):
@@ -254,7 +274,7 @@ def write_new_feats(outpath, featlist):
             f.write('\t'.join(line) + '\n')
 
 
-def write_new_ld_file(clusters, oldpath, newpath, threshold=1, outfilepath=os.path.join('simulation', 'simulation_report.txt')):
+def write_new_ld_file(clusters, oldpath, newpath, threshold=1, **kwargs):
     '''
     clusters is created by get_new_segs above
     oldpath and newpath are the locations of LearningData.txt files, old and new 
@@ -278,7 +298,7 @@ def write_new_ld_file(clusters, oldpath, newpath, threshold=1, outfilepath=os.pa
                     out.write(f"word\trest")
                 else:
                     out.write(word +'\n')
-    msg.env_render(message=f"\n\nWrote modified learning data to {newpath.split('simulation')[1]}", outfilepath=outfilepath)
+    msg.env_render(message=f"\n\nWrote modified learning data to {newpath.split('simulation')[1]}", **kwargs)
                             
 
 def check_new_segs(newpath, oldfeats, newfeats, **kwargs): 
@@ -297,7 +317,7 @@ def check_new_segs(newpath, oldfeats, newfeats, **kwargs):
     missing_segs = sorted([x for x in ldsegs if not x in newfeatsegs])
     extra_segs = sorted(list(set(newfeatsegs) - set(ldsegs)))
     if missing_segs:
-        msg.env_render(message=f"\n\nThe feature file is missing the following segments: \n{' '.join(missing_segs)}", outfilepath=outfilepath)
+        msg.env_render(message=f"\n\nThe feature file is missing the following segments: \n{' '.join(missing_segs)}", **kwargs)
         return (missing_segs, 'missing')
     if extra_segs:
         kwargs['message']=f"\n\nThe following segments are in the feature file but are not in the data file, and will be removed from feature file:\n{' '.join(extra_segs)}"
@@ -338,38 +358,35 @@ def complexify(**kwargs):
     the function creates a subfolder inside this directory, called 'simulation', and creates new versions of learning data and features. NOTE: any existing simulation directories will be deleted without warning.
     threshold is the cutoff for the inseparability measure. clusters above the threshold get converted into complex segments. defaults to 1.
     '''
-    vowels=False
+    if not 'vowels' in kwargs:
+        vowels=False
+    else:
+        vowels=kwargs['vowels']
     feats=kwargs.get('feats')
     ld=kwargs.get('ld')
     outdir=kwargs.get('outdir')
-    if 'threshold' in kwargs:
-        threshold=kwargs['threshold']
-    else:
-        threshold=1
-    if 'alpha' in kwargs:
-        alpha= kwargs['alpha']
-    else:  
-        alpha=.05
-    if 'vowels' in kwargs:
-        vowels=True
+    threshold = kwargs.get('threshold')
+    alpha = kwargs.get('alpha')
     ofpth = os.path.join(outdir, 'simulation_report.txt')
-    msg.env_render(message="\nSearching for complex segments.", outfilepath=ofpth)
-    msg.env_render(message=f"\nInseparability threshold: {threshold}\nAlpha level for Fisher's Exact Test: {alpha}", outfilepath=ofpth)
+    kwargs['outfilepath']=ofpth
+    msg.env_render(message="\nSearching for complex segments.", **kwargs)
+    msg.env_render(message=f"\nInseparability threshold: {threshold}\nAlpha level for Fisher's Exact Test: {alpha}", **kwargs)
     oldfeats = pnc.read_feat_file(feats, outfilepath=ofpth) #before starting the recursion, first version of features is arg passed to the command
-    msg.env_render(message="\nChecking feature file...\n", outfilepath=ofpth)
+    msg.env_render(message="\nChecking feature file...\n", **kwargs)
     if (vowels==False) and (not any([feat.startswith('syll') for feat in oldfeats[0]])):
         message="\nYou need to have a 'syll(abic)' feature in your feature file. The learner needs a list of consonants, [-syll], to get started.\n"
-        msg.env_render(message=message, outfilepath=ofpth)
+        x = f"Your features are: [{','.join(oldfeats[0])}]"
+        msg.env_render(message=message, **kwargs)
         if __name__=='__main__':
             raise SystemExit
         else:
             return message
     elif vowels and (not any([feat.startswith('cons') for feat in oldfeats[0]])):
         message = "\nYou need to have a 'cons(onantal)' feature in your feature file. The learner needs a list of vocoids, [-cons], to get started.\n"
-        msg.env_render(message=message, outfilepath=ofpth)
+        msg.env_render(message=message, **kwargs)
         if __name__=='__main__':
             raise SystemExit
-    elif pnc.check_feats(oldfeats, outfilepath=ofpth):
+    elif pnc.check_feats(oldfeats, **kwargs):
         if os.path.isdir(os.path.join(outdir, 'simulation')):
             shutil.rmtree(os.path.join(outdir, 'simulation'))
         os.mkdir(os.path.join(outdir, 'simulation'))
@@ -378,7 +395,7 @@ def complexify(**kwargs):
             wdir = os.path.join(outdir, 'simulation', 'iteration'+str(step))
             os.mkdir(wdir)
             #get numbers from feats and ld files
-            temp = get_bidir_transprobs(feats, ld)
+            temp = get_bidir_transprobs(feats, ld, **kwargs)
             if temp[0]=={}:
                 shutil.rmtree(wdir)
             else:
@@ -390,20 +407,19 @@ def complexify(**kwargs):
                 if float(counts[5]) > alpha:
                     del clusters[c]
             if not clusters:
-                msg.env_render(message=f'\nNo complex segments identified in {os.path.split(ld)[1]}. That is the final version of your learning data.', outfilepath=ofpth)
-                msg.env_render(message="\n\nSimulation Finished", outfilepath=ofpth)
+                msg.env_render(message=f'\nNo complex segments identified in {os.path.split(ld)[1]}. That is the final version of your learning data.', **kwargs)
+                msg.env_render(message="\n\nSimulation Finished", **kwargs)
                 step = 0
             else:
                 nc.write_insep(temp, os.path.join(wdir, 'inseparability.txt'))
-                msg.tab_render(d=clusters, message=f'\nFound complex segments on iteration {step}:', outfilepath=ofpth)
-                newfeats = make_new_feats(feats, get_new_segs(feats, clusters, threshold, outfilepath=ofpth)) 
-                msg.env_render(message="\nChecking learner-generated feature file...\n", outfilepath=ofpth)
-                if not pnc.check_feats(newfeats, outfilepath=ofpth):
-                    kwargs = {'message': msg.messages['badfeatswarning'], 'outfilepath': ofpth}
-                    msg.env_render(**kwargs)
-                write_new_ld_file(clusters, ld, os.path.join(wdir, 'LearningData.txt'), outfilepath=ofpth)
-                write_feats_w_check(os.path.join(wdir, 'Features.txt'), os.path.join(wdir, 'LearningData.txt'), oldfeats, newfeats, outfilepath=ofpth)
-                msg.env_render(message=f"\nExamining data from iteration {step}.", outfilepath=ofpth)
+                msg.tab_render(d=clusters, message=f'\nFound complex segments on iteration {step}:\n', **kwargs)
+                newfeats = make_new_feats(feats, get_new_segs(feats, clusters, **kwargs)) 
+                msg.env_render(message="\nChecking learner-generated feature file...\n", **kwargs)
+                if not pnc.check_feats(newfeats, **kwargs):
+                    msg.env_render(message = msg.messages['badfeatswarning'], **kwargs)
+                write_new_ld_file(clusters, ld, os.path.join(wdir, 'LearningData.txt'), **kwargs)
+                write_feats_w_check(os.path.join(wdir, 'Features.txt'), os.path.join(wdir, 'LearningData.txt'), oldfeats, newfeats, **kwargs)
+                msg.env_render(message=f"\nExamining data from iteration {step}.\n", **kwargs)
                 ld= os.path.join(wdir, 'LearningData.txt')
                 feats = os.path.join(wdir, 'Features.txt') 
                 step+=1
@@ -413,7 +429,10 @@ def complexify(**kwargs):
         if __name__=="__main__":
             raise SystemExit
         else:
-            return "Your feature file failed a basic check. Please see the help page"
+            if os.path.isfile(os.path.join(outdir, 'simulation_report.txt')):
+                with open(os.path.join(outdir, 'simulation_report.txt'), 'r', encoding='utf-8') as f:
+                    errors = f.read().replace('\n', "<br>")
+            return "Your feature file does not allow segments to be distinguished from each other. Perhaps try again with <a href='media/generic/Features.txt'>this generic feature file</a>?.<br>Here is how far the learner got:<br>"+errors
     
 
 def plot_insep(simpath, threshold=1, takefirst=15, show=False, ftype='pdf'):
@@ -439,17 +458,18 @@ if __name__=='__main__':
     parser.add_argument('--outdir', help='full path to the location of output files. Warning: any folder called "simulation" in that location will be overwritten without a prompt.')
     parser.add_argument('--vowels', help='makes the learner count vocoids rather than consonants', type=bool, default=False)
     parser.add_argument('--language', help='if only this argument is specified, the learner will look for an appropriately named folder within "data" (located at the same level as "code") and will run the simulation on the learning data and features files inside that folder. For example, python compseg.py --lang=english/celex/broad runs the learner on the learning data and features inside ../data/english/celex/broad')
-    parser.add_argument('--threshold', help='threshold value for inseparability', type=float, default=1.0)
-    parser.add_argument('--alpha', help="alpha value for Fisher's Exact Test", type=float, default=0.5)
+    parser.add_argument('--threshold', help='threshold value for inseparability', nargs='?', const=1.0, type=float, default=1.0)
+    parser.add_argument('--alpha', help="alpha value for Fisher's Exact Test", nargs='?', const=0.05, type=float, default=0.05)
     args=parser.parse_args()
-    print(args)
+    kwargs = vars(args)
     if args.language:
         lgpath = os.path.join(os.path.dirname(os.getcwd()), 'data', args.language)
-        ld = os.path.join(lgpath, 'LearningData.txt')
-        feats = os.path.join(lgpath, 'Features.txt')
+        kwargs['ld'] = os.path.join(lgpath, 'LearningData.txt')
+        kwargs['feats'] = os.path.join(lgpath, 'Features.txt')
+        kwargs['outdir']=lgpath
         simpath = os.path.join(lgpath, 'simulation')
         try: 
-            complexify(ld=ld, feats=feats, outdir=lgpath)
+            complexify(**kwargs)
             plot_insep(simpath, ftype='png')
             plot_insep(simpath, ftype='pdf')
         except FileNotFoundError:
@@ -457,33 +477,8 @@ if __name__=='__main__':
             raise
     else:
         try:
-            complexify(**vars(args))
+            complexify(**kwargs)
             plot_insep(os.path.join(args.outdir, 'simulation'), ftype='png')
         except:
             msg.env_render(message=f"attempting to plot: {os.path.join(sys.argv[3], 'simulation')} but something went wrong. Are the simulation files at that location?")
             raise
-    #if 'help' in sys.argv:
-    #    msg.env_render(msg.messages['help'])
-    #else:
-    #    if len(sys.argv)==2:
-    #        lgpath = os.path.join(os.path.dirname(os.getcwd()), 'data', sys.argv[1])
-    #        ld = os.path.join(lgpath, 'LearningData.txt')
-    #        feats = os.path.join(lgpath, 'Features.txt')
-    #         simpath = os.path.join(lgpath, 'simulation')
-    #        try:
-    #            complexify(ld = ld, feats=feats, outdir=lgpath)
-    #            plot_insep(simpath, ftype='png') 
-    #            plot_insep(simpath, ftype='pdf')
-    #        except FileNotFoundError:
-    #            msg.env_render(message='\nCould not locate the Learning Data or Features or output path')
-    #            raise
-    #    else:
-    #        try:
-    #            complexify(ld= sys.argv[1], feats=sys.argv[2], outdir=sys.argv[3])
-    #            try:
-    #                plot_insep(os.path.join(sys.argv[3], 'simulation'), ftype='png')
-    #            except:
-    #                msg.env_render(message=f"attempting to plot: {os.path.join(sys.argv[3], 'simulation')} but something went wrong. Are the simulation files at that location?")
-    #        except:
-    #            raise
-    #            msg.env_render(message='Could not find files at your path. Learning Data first, then Features, then output path. Try\n "$ python3 compseg help"')

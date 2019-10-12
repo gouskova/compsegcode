@@ -58,7 +58,10 @@ def plot_all_vert(simpath, threshold, takefirst, show, ftype):
             size = (7, 4)
         stack = False
     else:
-        dims = (2, int(q/2)+1)
+        if q % 2 == 0:
+            dims = (2, int(q/2))
+        else:
+            dims = (2, int(q/2)+1)
         size = (4*q, 3*q)
         stack = True
     fig, axs = plt.subplots(dims[0], dims[1], figsize = size, sharex= True)
