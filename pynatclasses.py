@@ -77,6 +77,7 @@ def make_feat_vectors(featlines):
 	returns a dictionary of feature values along with segments that have those feature values.
 	e.g.,
 {-syll: [k, t, p, w, j, n,...]}
+        why is it called "make_feat_vectors"? who knows
 	'''
 	featdict = {}
 	for feat in featlines[0]:

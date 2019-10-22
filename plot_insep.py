@@ -37,11 +37,12 @@ def get_plot_title(simpath):
     '''
     checks if the path is a full path, and finds the Language + version substring of it
     '''
+    if 'data' in simpath:
+        simpath = simpath.split('data')[1]
+        return ' '.join([x.capitalize() for x in simpath.split(os.path.sep)])
     if os.path.isabs(simpath):
         #return ' '.join([x.capitalize() for x in os.path.split(simpath)[0].split('data')[1].split(os.path.sep)])
         return 'Simulation plot'
-    else:
-        return ' '.join([x.capitalize() for x in simpath.split(os.path.sep)])
 
 def plot_all_vert(simpath, threshold, takefirst, show, ftype):
     '''
@@ -52,10 +53,12 @@ def plot_all_vert(simpath, threshold, takefirst, show, ftype):
     q = len(iterations)
     if q<=3:
         dims=(1, q)
-        if q==1:
+        if q ==1:
             size = (4, 8)
+        elif q==2:
+            size = (4, 4)
         else:
-            size = (7, 4)
+            size = (8, 4)
         stack = False
     else:
         if q % 2 == 0:
@@ -118,7 +121,7 @@ def plot_all_vert(simpath, threshold, takefirst, show, ftype):
         plt.xlim(0,1.1)
     else:
         plt.xlim(0)
-    plt.subplots_adjust(left=0.20, bottom=0.20, wspace=0.4)
+    plt.subplots_adjust(left=0.10, bottom=0.20, wspace=0.4)
     if show:
         plt.show()
     fig.savefig(os.path.join(simpath, '.'.join(['insep_plots', ftype])))
