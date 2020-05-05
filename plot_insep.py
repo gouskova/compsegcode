@@ -3,8 +3,6 @@ produces plots for inseparability values, from inseparability.txt files
 requires matplotlib and dependencies (tkinter)
 
 this module is used in compseg via a wrapper function, plot_insep.
-
-i removed some of the earlier legacy options (plotting individual inseparability.txt files) to simplify maintenance
 '''
 
 
@@ -49,12 +47,16 @@ def plot_all_vert(simpath, threshold, takefirst, show, ftype):
     given a path to a data/language folder, plots all the simulations in a single figure, sharing the x-axes
     the clusters in this version of the plotting function appear on the y-axis.
     '''
+    if ftype=='pdf':
+        pttype = 'ko'
+    else:
+        pttype = 'bo'
     iterations = get_paths(simpath)
     q = len(iterations)
     if q<=3:
         dims=(1, q)
         if q ==1:
-            size = (4, 8)
+            size = (3, 4)
         elif q==2:
             size = (4, 4)
         else:
@@ -87,7 +89,7 @@ def plot_all_vert(simpath, threshold, takefirst, show, ftype):
                 if float(vals[5])>=0.05:
                     p_vals.append('kX')
                 else:
-                    p_vals.append('bo')
+                    p_vals.append(pttype)
             if takefirst:
                 clusters = clusters[:takefirst]
                 ins_vals = ins_vals[:takefirst]
@@ -111,17 +113,17 @@ def plot_all_vert(simpath, threshold, takefirst, show, ftype):
             theplot.set_title('Iteration %s' % iteration, **libfont)
             theplot.axvline(threshold, color='r')
             plt.setp(theplot.yaxis.get_majorticklabels(), **libfont)
-    ptit= get_plot_title(simpath) 
+    #ptit= get_plot_title(simpath) 
     if stack:
         plt.tight_layout()
-        plt.suptitle("%s\n\n" % (ptit), **libfont, va='baseline')
-    else:
-        plt.suptitle("%s\n\n" % (ptit), **libfont)
+    #    plt.suptitle("%s\n\n" % (ptit), **libfont, va='baseline')
+    #else:
+    #    plt.suptitle("%s\n\n" % (ptit), **libfont)
     if maxval<=1:
         plt.xlim(0,1.1)
     else:
         plt.xlim(0)
-    plt.subplots_adjust(left=0.10, bottom=0.20, wspace=0.4)
+    plt.subplots_adjust(left=0.20, bottom=0.20, wspace=0.4)
     if show:
         plt.show()
     fig.savefig(os.path.join(simpath, '.'.join(['insep_plots', ftype])))
@@ -135,10 +137,10 @@ if __name__=='__main__':
     import sys
     if 'help' in sys.argv:
         msg.env_render(message="Looks inside the language/simulation directory and plots inseparability values for the top 15 clusters in each iteration. The individual plots will be placed at the same level as inseparability.txt files that inspired them.\n\nUsage:\n\n$ python3 plot_insep.py languagename\n\n. The 'languagename' argument is a full path to the location of the 'simulation' folder that contains the inseparability.txt file. You can also plot simulations for languages in the 'data' folder.") 
-    else:
         try:
             plot_all_vert(sys.argv[1], threshold=1, takefirst=15, show=False, ftype='pdf')
             plot_all_vert(sys.argv[1], threshold=1, takefirst=15, show=False, ftype='png')
+            print("plotted " + sys.argv[1])
         except FileNotFoundError:
             simpath = os.path.join(os.path.dirname(os.getcwd()), 'data', sys.argv[1], 'simulation')
             plot_all_vert(simpath, threshold=1, takefirst=15, show=False, ftype = 'pdf')
