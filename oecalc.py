@@ -48,7 +48,7 @@ from nltk import ngrams
 # make a dictionary of pairs of segs and collect their O/E values into it
 
 
-def OEcalc(filepath, segs, local):
+def OEcalc(**pars):
     '''
     arguments:
     *filepath* is a path to the file you want to calculate O/E over.
@@ -67,6 +67,9 @@ def OEcalc(filepath, segs, local):
     Defaults to 2, so an O/E value of 1.3432 will be printed as 1.34.
     *local* is boolean and determines whether segment pairs are adjacent (e.g., "p a" in "p a t i") or nonlocal (as in "p t" in "p a t i") 
     '''
+    filepath = pars['filepath']
+    segs = pars['segs']
+    local = pars['local']
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
             words =f.readlines()
@@ -113,13 +116,20 @@ def OEcalc(filepath, segs, local):
 
 # make the dictionary printable   
 
-def makeOETable(filepath, segs, local, rounded=True):
+def makeOETable(**pars):
     '''
     arranges the O/E values and sorts them into a table for display.
     the input should be the dictionary that's returned by pairOEcalc()
     output is a list of tab-separated lines that, if printed, looks like a table
     '''
-    pairsdic = OEcalc(filepath, segs, local)
+    filepath = pars['filepath']
+    segs = pars['segs']
+    local = pars['local']
+    if 'rounded' in pars:
+        rounded = pars['rounded']
+    else:
+        rounded=True
+    pairsdic = OEcalc(**pars)
     seglist = segs.strip().split(' ')
     header = '\t'+'\t'.join(seglist)
     rows = [header]
@@ -137,12 +147,15 @@ def makeOETable(filepath, segs, local, rounded=True):
 
 # printable observed and expected values (as opposed to ratio) for each pair
 
-def makeCountTable(filepath, segs, local):
+def makeCountTable(**pars):
         '''
         print how often each segment in a pair was observed and how often it was expected
 
         '''
-        pairsdic=OEcalc(filepath, segs, local)
+        filepath = pars['filepath']
+        segs = pars['segs']
+        local = pars['local']
+        pairsdic=OEcalc(**pars)
         seglist = segs.strip().split(' ')
         header = '\t'+'\t'.join(seglist)
         rows = [header]
