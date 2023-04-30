@@ -463,7 +463,6 @@ if __name__=='__main__':
     args=parser.parse_args()
     kwargs = vars(args)
     if args.language:
-        print(kwargs['language'])
         lgpath = os.path.join(os.path.dirname(os.getcwd()), 'data', args.language)
         kwargs['ld'] = os.path.join(lgpath, 'LearningData.txt')
         kwargs['feats'] = os.path.join(lgpath, 'Features.txt')
