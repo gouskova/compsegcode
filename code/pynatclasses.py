@@ -132,7 +132,7 @@ def get_nat_classes(featlines, **kwargs):
 	segdict = segs_to_feats(featlines)
 	featdict = make_feat_vectors(featlines)
 	#find all pairs of segs that share feature values:
-	natclasslist = []
+	natclasslist = make_feat_vectors.keys()
 	for seg in segdict:
 		for otherseg in segdict:
 			overlap = set(segdict[seg]) & set(segdict[otherseg])
@@ -343,16 +343,16 @@ if __name__ == '__main__':
 	HelpString = '\n\nThis utility finds natural classes in a feature file formatted according to Hayes and Wilson (2009, Linguistic Inquiry) conventions. Basic usage: \n\n$ python3 pynatclasses.py /home/full/path/to/file/Features.txt /home/full/path/to/output.txt\n\n You can also get all the consonants from a feature file from a command line call: \n $ python3 pynatclasses.py /home/full/path/to/Features.txt cons\n\n This last option requires there being a -syll or -syllabic feature in the file.\n\n\n To see other options, import it into python and try help(pynatclasses)'
 	CLError = '\n\nPlease provide the name of a feature file and a place to save the natural classes to. \n\nFor example: "python3 pynatclasses.py /home/you/Desktop/features.txt /home/you/Desktop/natclasses.txt"\n\n'
 	basepath = os.path.dirname(os.path.dirname(os.getcwd()))
-	if "help" in sys.argv:
+	if "--help" in sys.argv:
 		msg.env_render(message=HelpString)
-	elif 'check' in sys.argv:
+	elif '--check' in sys.argv:
 		feats = os.path.join(basepath, 'data', sys.argv[1], 'Features.txt')
 		featlines = read_feat_file(feats)
 		check_feats(featlines)
-	elif 'cus' in sys.argv:
+	elif '--cus' in sys.argv:
 		feats = os.path.join(basepath, 'data', sys.argv[1], 'Features.txt')
 		make_custom_proj(sys.argv[2], feats, '/home/maria/Desktop/projections.txt')
-	elif not "cons" in sys.argv:
+	elif not "--cons" in sys.argv:
 		try: 
 			feats = sys.argv[1]
 			outfile = sys.argv[2]
