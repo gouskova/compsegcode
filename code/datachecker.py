@@ -9,12 +9,8 @@ if any segments turn up that aren't in both files, the function alerts you.
 usage:
     datachecker.findOrphans('/home/you/WordListFile.txt', '/home/you/Featfile.txt')
 '''
-try:
-    import pynatclasses
-    import messages as msg
-except ModuleNotFoundError:
-    import compseg.code.pynatclasses
-    import compseg.code.messages as msg
+import pynatclasses
+import messages as msg
 
 def collectLDSegs(somepath):
 	segs = []

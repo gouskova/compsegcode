@@ -11,12 +11,8 @@ from datetime import datetime
 import scipy
 from nltk import ngrams
 
-try:
-    import pynatclasses as pnc
-    import messages as msg
-except ModuleNotFoundError:
-    import compseg.code.pynatclasses as pnc
-    import compseg.code.messages as msg
+import pynatclasses as pnc
+import messages as msg
 
 '''
 During the review process, the question arose why bigram probabilities were calculated over segments rather than over natural class sequences. This module explores the natural class bigram option.

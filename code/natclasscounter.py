@@ -10,12 +10,9 @@ import itertools
 import scipy
 from nltk import ngrams
 
-try:
-    import pynatclasses as pnc
-    import messages as msg
-except ModuleNotFoundError:
-    import compseg.code.pynatclasses as pnc
-    import compseg.code.messages as msg
+import pynatclasses as pnc
+import messages as msg
+
 '''
 the module extracts sequences of consonants from a corpus, and calculates the inseparability measures of certain clusters from probabilities of individual Cs and CCs in a phonological corpus. 
 '''

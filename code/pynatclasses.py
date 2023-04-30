@@ -26,10 +26,7 @@ import itertools
 import sys
 
 
-try:
-    import messages as msg
-except ModuleNotFoundError:
-    import compseg.code.messages as msg
+import messages as msg
 
 
 

@@ -9,13 +9,11 @@ this module is used in compseg via a wrapper function, plot_insep.
 import os
 
 
+import matplotlib.font_manager
 import matplotlib.pyplot as plt
 import numpy as np
 
-try:
-    import messages as msg
-except ModuleNotFoundError:
-    import compseg.code.messages as msg
+import messages as msg
 
 def get_paths(simpath):
     '''
@@ -72,9 +70,9 @@ def plot_all_vert(simpath, threshold, takefirst, show, ftype):
     fig, axs = plt.subplots(dims[0], dims[1], figsize = size, sharex= True)
     if len(iterations)>3:
         axs=axs.flatten()
-    libfont = {'fontname': 'Linux Libertine', 'size': 'x-large'}
+    libfont = {'fontname': 'Linux Libertine O', 'size': 'x-large'}
     if 'mbay' in simpath:
-        libfont = {'fontname': 'Linux Libertine', 'size': 'large'}
+        libfont = {'fontname': 'Linux Libertine O', 'size': 'large'}
     maxval = 0
     for iteration in iterations:
         with open(iterations[iteration], 'r', encoding='utf-8') as f:
