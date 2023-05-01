@@ -28,18 +28,11 @@ import shutil
 
 #custom modules
 
-try:
-    import pynatclasses as pnc
-    import natclasscounter as nc
-    import datachecker as dc
-    import plot_insep as pins
-    import messages as msg
-except ModuleNotFoundError:
-    import compseg.code.natclasscounter as nc
-    import compseg.code.pynatclasses as pnc
-    import compseg.code.datachecker as dc
-    import compseg.code.plot_insep as pins
-    import compseg.code.messages as msg
+import pynatclasses as pnc
+import natclasscounter as nc
+import datachecker as dc
+import plot_insep as pins
+import messages as msg
 
 
 ##########################################
