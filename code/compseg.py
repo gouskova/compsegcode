@@ -133,7 +133,7 @@ def analyze_cons_feats(same, differ, segdic):
             elif '-back' in seg2_feats:
                 compsegs[cseg].append('-back')
             elif '-round' in seg2_feats:
-                compseg[cseg].append('-round')
+                compsegs[cseg].append('-round')
         #now take all other segs from seg1
             for ngram in differ:
                 feats_to_fix = set([x.lstrip('+-') for x in differ[ngram]])
