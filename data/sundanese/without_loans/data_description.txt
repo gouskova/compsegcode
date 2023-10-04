@@ -1,0 +1,1 @@
+This version of the data excludes the ~3,000 or so words from the dictionary that are explicitly marked as loanwords.

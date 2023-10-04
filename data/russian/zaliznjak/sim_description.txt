@@ -1,0 +1,1 @@
+This simulation replicates the Tikhonov one,  which is described in more detail in the paper.

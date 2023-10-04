@@ -1,0 +1,61 @@
+
+Searching for complex segments.
+Inseparability threshold: 1.0
+Alpha level for Fisher's Exact Test: 0.05
+Checking feature file...
+
+The new feature file is well-formed. all the segments can be uniquely identified.
+
+Getting consonants...
+b, d, ɟ, g, p, t, c, k, ʔ, m, n, ɲ, ŋ, f, v, s, z, h, r, l, w, j
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 1:
+ɲ c	5.606054859934484
+n d	2.979942659083765
+ɲ ɟ	2.172180539278593
+m b	1.7973698528298638
+m p	1.7521462604823963
+n t	1.6519786392989055
+ŋ k	1.1008167007576082
+Your feature file is malformed. Feature values have to be "+", "-", or "0".
+Checking learner-generated feature file...
+
+The new feature file is well-formed. all the segments can be uniquely identified.
+
+
+Wrote modified learning data to /iteration1/LearningData.txtYour feature file is malformed. Feature values have to be "+", "-", or "0".Your feature file is malformed. Feature values have to be "+", "-", or "0".
+
+Your segments are all defined in the feature file.
+Examining data from iteration 1.
+
+Getting consonants...
+b, d, ɟ, g, p, t, c, k, ʔ, m, n, ɲ, ŋ, f, v, s, z, h, r, l, w, j, mb, mp, nd, nt, ɲɟ, ɲc, ŋk
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 2:
+ŋ g	3.2456142804884394
+Your feature file is malformed. Feature values have to be "+", "-", or "0".
+Checking learner-generated feature file...
+
+The new feature file is well-formed. all the segments can be uniquely identified.
+
+
+Wrote modified learning data to /iteration2/LearningData.txtYour feature file is malformed. Feature values have to be "+", "-", or "0".Your feature file is malformed. Feature values have to be "+", "-", or "0".
+
+Your segments are all defined in the feature file.
+Examining data from iteration 2.
+
+Getting consonants...
+b, d, ɟ, g, p, t, c, k, ʔ, m, n, ɲ, ŋ, f, v, s, z, h, r, l, w, j, mb, mp, nd, nt, ɲɟ, ɲc, ŋk, ŋg
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+No complex segments identified in LearningData.txt. That is the final version of your learning data.
+
+Simulation Finished

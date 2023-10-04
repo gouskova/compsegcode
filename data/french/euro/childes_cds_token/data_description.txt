@@ -1,0 +1,3 @@
+The corpus of French infant-directed speech comes from <a href="https://childes.talkbank.org/derived/frenchphon.zip">CHILDES</a>, and was prepared by <a href="https://github.com/juliacarbajal/french_phonologizer">Maria Julia Carbajal, Camillia Bouchon, Emmanuel Dupoux, & Sharon Peperkamp (2018)</a>. We used their IPA correspondence table to transcribe the files. Since the corpus consists of utterances rather than words, we split the utterances on commas, exclamation marks,
+question marks, and "unintelligible"
+signs, so each connected utterance appears without word breaks on its own line. The corpus represents <b>token frequencies</b> rather than type frequencies; i.e., the word "ty" (you) would appear multiple times in connected speech.

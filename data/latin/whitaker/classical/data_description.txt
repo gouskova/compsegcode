@@ -1,0 +1,1 @@
+This 84,000+ word list comes from Whitaker's dictionary of Latin, widely available online. It was converted to IPA from orthography by substituting geminates with singleton symbols. Vowel length is not marked in this dictionary so it is not represented in the data file.

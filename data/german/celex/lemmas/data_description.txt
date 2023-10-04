@@ -1,0 +1,2 @@
+The lemma list comes from the German portion of <a href="http://celex.mpi.nl/">Celex</a>. The list is minimally filtered to exclude non-native sounds such as [θ].
+

@@ -1,0 +1,1 @@
+This dataset is <a href="http://www.lexique.org/shiny/lexique/">Lexique</a>, with {t, d} replaced by corresponding affricates {t s}, {d z} before {y/i}.

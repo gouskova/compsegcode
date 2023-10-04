@@ -1,0 +1,1 @@
+The data come from <a href="http://www.lexique.org/">Lexique</a>, which is a dictionary with transcriptions provided for about 71,000 words. We did not change anything else in the European version of the dataset.

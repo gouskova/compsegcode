@@ -1,0 +1,1 @@
+This is the same dataset as "broad", but with [t ʃ] and [d ʒ] replaced by [c ʃ] and [ɟ ʒ] respectively. Celex shows morpheme boundaries as syllabification in cases like "pot shot", so those [t ʃ] sequences were transcribed with alveolar first halves. See <a href="https://github.com/gouskova/transcribers/tree/master/english">details here</a>.

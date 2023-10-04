@@ -1,0 +1,4 @@
+<p>This 84,000+ word list comes from Whitaker's dictionary of Latin, widely available online. It was converted to IPA from orthography by substituting geminates with singleton symbols. Vowel length is not marked in this dictionary so it is not represented in the data file.</p>
+
+<p>This particular version of the dataset tests a hypothesis about the changing frequency distributions that come with sound change. In the history of Latin, palatalization affected [t, d, k, g] before front vowels and glides. This resulted in a variety of changes--for example, in modern Italian, [ts, dz, tʃ, dʒ] originated from Latin stops in those invironments (simplifying somewhat). We took our basic Latin dictionary and applied the changes, rewriting [t i] with [t s i], [k i] with [t
+ʃ i], and so on (just before [i]). The result is that the learner unified all four sequences into affricates</p>.

@@ -1,0 +1,216 @@
+
+Searching for complex segments.
+Inseparability threshold: 1.0
+Alpha level for Fisher's Exact Test: 0.05
+Checking feature file...
+
+The new feature file is well-formed. all the segments can be uniquely identified.
+
+Getting consonants...
+p, k, th, ty, t, rt, m, ng, nh, ny, n, rn, w, yh, y, rr, r, l, rl
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 1:
+n t	8.740909414535796
+rn rt	6.246756003618768
+nh th	5.198229446181001
+ng k	3.387871232709352
+ny ty	2.6390658447273174
+
+Checking learner-generated feature file...
+
+The new feature file is well-formed. all the segments can be uniquely identified.
+
+
+Wrote modified learning data to /iteration1/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 1.
+
+Getting consonants...
+p, k, th, ty, t, rt, m, ng, nh, ny, n, rn, w, yh, y, rr, r, l, rl, ngk, nhth, nyty, nt, rnrt
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 2:
+n k	5.041146117292092
+m p	2.75704100842017
+r k	2.197195098812109
+r p	1.7854792034422935
+rn k	1.1344354815511704
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+r  has a subset of the features of rp
+r  has a subset of the features of rk
+ngk  has a subset of the features of nk
+ngk  has a subset of the features of rnk
+nk  has a subset of the features of rnk
+rp  has a subset of the features of rk
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration2/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 2.
+
+Getting consonants...
+p, k, th, ty, t, rt, m, ng, nh, ny, n, rn, w, yh, y, rr, r, l, rl, ngk, nhth, nyty, nt, rnrt, mp, nk, rnk, rp, rk
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 3:
+n p	4.779089508502073
+n ty	4.248854212915638
+t p	4.216405881890384
+rr w	2.3522884254307015
+rr k	2.3345850442453684
+t ty	1.6224895182764465
+ny k	1.3504706898679504
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of tp
+ty  has a subset of the features of tty
+w  has a subset of the features of rrw
+rr  has a subset of the features of rrk
+r  has a subset of the features of rp
+r  has a subset of the features of rk
+ngk  has a subset of the features of nk
+ngk  has a subset of the features of rnk
+ngk  has a subset of the features of nyk
+nyty  has a subset of the features of nty
+mp  has a subset of the features of np
+nk  has a subset of the features of rnk
+nk  has a subset of the features of nyk
+rnk  has a subset of the features of nyk
+rp  has a subset of the features of rk
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration3/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 3.
+
+Getting consonants...
+p, k, th, ty, t, rt, m, ng, nh, ny, n, rn, w, yh, y, rr, r, l, rl, ngk, nhth, nyty, nt, rnrt, mp, nk, rnk, rp, rk, tp, tty, nyk, np, nty, rrk, rrw
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 4:
+rn p	5.410710690219281
+ty p	4.840073952068656
+ny m	3.630468987488485
+rn m	2.397361044281774
+n m	2.2751153697745172
+l y	1.852835457870236
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of tp
+p  has a subset of the features of typ
+ty  has a subset of the features of tty
+m  has a subset of the features of nym
+m  has a subset of the features of nm
+m  has a subset of the features of rnm
+w  has a subset of the features of rrw
+rr  has a subset of the features of rrk
+r  has a subset of the features of rp
+r  has a subset of the features of rk
+l  has a subset of the features of ly
+ngk  has a subset of the features of nk
+ngk  has a subset of the features of rnk
+ngk  has a subset of the features of nyk
+nyty  has a subset of the features of nty
+mp  has a subset of the features of np
+mp  has a subset of the features of rnp
+nk  has a subset of the features of rnk
+nk  has a subset of the features of nyk
+rnk  has a subset of the features of nyk
+rp  has a subset of the features of rk
+tp  has a subset of the features of typ
+np  has a subset of the features of rnp
+nym  has a subset of the features of nm
+nym  has a subset of the features of rnm
+nm  has a subset of the features of rnm
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration4/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 4.
+
+Getting consonants...
+p, k, th, ty, t, rt, m, ng, nh, ny, n, rn, w, yh, y, rr, r, l, rl, ngk, nhth, nyty, nt, rnrt, mp, nk, rnk, rp, rk, tp, tty, nyk, np, nty, rrk, rrw, typ, nym, nm, rnp, rnm, ly
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 5:
+rr m	2.027561554288864
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of tp
+p  has a subset of the features of typ
+ty  has a subset of the features of tty
+m  has a subset of the features of nym
+m  has a subset of the features of nm
+m  has a subset of the features of rnm
+w  has a subset of the features of rrw
+rr  has a subset of the features of rrk
+r  has a subset of the features of rp
+r  has a subset of the features of rk
+l  has a subset of the features of ly
+ngk  has a subset of the features of nk
+ngk  has a subset of the features of rnk
+ngk  has a subset of the features of nyk
+nyty  has a subset of the features of nty
+mp  has a subset of the features of np
+mp  has a subset of the features of rnp
+nk  has a subset of the features of rnk
+nk  has a subset of the features of nyk
+rnk  has a subset of the features of nyk
+rp  has a subset of the features of rk
+tp  has a subset of the features of typ
+np  has a subset of the features of rnp
+nym  has a subset of the features of nm
+nym  has a subset of the features of rnm
+nm  has a subset of the features of rnm
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration5/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 5.
+
+Getting consonants...
+p, k, th, ty, t, rt, m, ng, nh, ny, n, rn, w, yh, y, rr, r, l, rl, ngk, nhth, nyty, nt, rnrt, mp, nk, rnk, rp, rk, tp, tty, nyk, np, nty, rrk, rrw, typ, nym, nm, rnp, rnm, ly, rrm
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+No complex segments identified in LearningData.txt. That is the final version of your learning data.
+
+Simulation Finished

@@ -1,0 +1,131 @@
+
+Searching for complex segments.
+Inseparability threshold: 1.0
+Alpha level for Fisher's Exact Test: 0.05
+Checking feature file...
+
+The new feature file is well-formed. all the segments can be uniquely identified.
+
+Getting consonants...
+h, b, p, ph, d, t, th, k, kh, s, sh, x, ɸ, ʃ, ʒ, ʃh, ɬ, ɬh, m, n, ŋ, ɲ, r, l, j, w
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 1:
+t ɬh	7.692947580895815
+t ɬ	6.446621161906376
+d ʒ	5.414021440555388
+t sh	5.398606373737338
+t s	4.282789625116203
+k x	2.8473750663906
+ŋ w	1.565717534041538
+sh w	1.4539980526226544
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+sh  has a subset of the features of shw
+ŋ  has a subset of the features of ŋw
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration1/LearningData.txt
+
+The following segments are in the feature file but are not in the data file, and will be removed from feature file:
+sh shw ɸ ʒ
+Examining data from iteration 1.
+
+Getting consonants...
+h, b, p, ph, d, t, th, k, kh, s, x, ʃ, ʃh, ɬ, ɬh, m, n, ŋ, ɲ, r, l, j, w, dʒ, ts, tsh, tɬ, tɬh, kx, ŋw
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 2:
+t ʃh	55.45701351798868
+tsh w	36.4007530868872
+ts w	9.750122579096578
+kx w	6.733742551731857
+k w	6.5090848343006575
+t ʃ	6.172606722002218
+tɬ w	4.755384033079302
+x w	4.173005258154228
+l w	2.1821554484318035
+s w	1.5540241491171913
+r w	1.4086756722795781
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+k  has a subset of the features of kw
+s  has a subset of the features of sw
+x  has a subset of the features of xw
+ŋ  has a subset of the features of ŋw
+r  has a subset of the features of rw
+l  has a subset of the features of lw
+ts  has a subset of the features of tsw
+tsh  has a subset of the features of tshw
+tɬ  has a subset of the features of tɬw
+kx  has a subset of the features of kxw
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration2/LearningData.txt
+
+The following segments are in the feature file but are not in the data file, and will be removed from feature file:
+ʃh
+Examining data from iteration 2.
+
+Getting consonants...
+h, b, p, ph, d, t, th, k, kh, s, x, ʃ, ɬ, ɬh, m, n, ŋ, ɲ, r, l, j, w, dʒ, ts, tsh, tɬ, tɬh, kx, ŋw, tʃ, tʃh, kw, sw, xw, rw, lw, tsw, tshw, tɬw, kxw
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 3:
+th w	255.1724617689931
+t w	239.68869588495215
+tɬh w	182.49340301150437
+n w	81.16581592158929
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+t  has a subset of the features of tw
+th  has a subset of the features of thw
+k  has a subset of the features of kw
+s  has a subset of the features of sw
+x  has a subset of the features of xw
+n  has a subset of the features of nw
+ŋ  has a subset of the features of ŋw
+r  has a subset of the features of rw
+l  has a subset of the features of lw
+ts  has a subset of the features of tsw
+tsh  has a subset of the features of tshw
+tɬ  has a subset of the features of tɬw
+tɬh  has a subset of the features of tɬhw
+kx  has a subset of the features of kxw
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration3/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 3.
+
+Getting consonants...
+h, b, p, ph, d, t, th, k, kh, s, x, ʃ, ɬ, ɬh, m, n, ŋ, ɲ, r, l, j, w, dʒ, ts, tsh, tɬ, tɬh, kx, ŋw, tʃ, tʃh, kw, sw, xw, rw, lw, tsw, tshw, tɬw, kxw, tw, thw, nw, tɬhw
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+No complex segments identified in LearningData.txt. That is the final version of your learning data.
+
+Simulation Finished

@@ -1,0 +1,1 @@
+Same data as for "broad", same manipulation as for Celex except that an across-the-board search-and-replace was used for [t ʃ] and [d ʒ]. CMU does not have morpheme boundaries in any form.

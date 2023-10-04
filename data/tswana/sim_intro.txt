@@ -1,0 +1,8 @@
+Mentioned in the paper only in passing, Tswana is a particularly rich case where the argumentation from phonotactics is reasonably clear--but its labiocoronals are controversial because they are typologically rare. This case study demonstrates that what is rare cross-linguistically is also rare intra-linguistically; the labiocoronal sounds found in the Sengwato dialect occur in just a handful of morphemes. Since this dialect does not have a dictionary, we did the
+best we could to create a corpus for it from the only electronic dictionary of Tswana available to us. The very thorough description of the dialect in One Tlale's 2005 dissertation was an invaluable aid.<br>
+<br>
+While related to the Zimbwabwean Shona languages, Tswana differs in affording its nasals syllabic and tone-bearing status. As a result, Tswana is not usually analyzed as having prenasalized consonants. It is, however, analyzed as having labialized nasals. Our learner finds [ŋw] and [nw], but the corpus had no instances of [ɲ w], so the learner did not find them.<br>
+<br>
+Yet another difference between Zezuru Shona and Sengwato Tswana is that the latter has a peculiarly gapped inventory of consonants. Because just about all the sequences of consonants are analyzed as complex segments in Tswana, the gappy inventory is not a problem for the learner.
+
+

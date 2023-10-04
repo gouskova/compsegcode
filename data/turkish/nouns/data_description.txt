@@ -1,0 +1,1 @@
+This subset of nouns was extracted from <a href="http://linguistics.berkeley.edu/TELL/">Turkish Electronic Living Lexicon</a>. We used the source's IPA transcriptions. Hat tip to <a href="http://phonologist.org">Michael Becker</a> for sharing the data with us.

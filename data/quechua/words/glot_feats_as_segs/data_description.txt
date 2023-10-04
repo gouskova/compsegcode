@@ -1,0 +1,1 @@
+This version of the Quechua word list transcribes ejectives and aspirates as sequences with glottal stops and [h] respectively.

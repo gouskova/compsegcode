@@ -1,0 +1,3 @@
+This data set was prepared by <a href="https://wp.nyu.edu/gilliangallagher/">Gillian Gallagher</a> from Young and Morgan's (1972/80) dictionary, by including inflected headwords and excluding stems.<br> 
+
+<b>Young, Robert W., and William Morgan.</b> The Navajo language: A grammar and colloquial dictionary. Vol. 3. University of New Mexico Press, 1980.

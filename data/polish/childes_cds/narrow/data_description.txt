@@ -1,0 +1,1 @@
+The corpus of Polish Child-Directed Speech (CDS) comes from <a href="http://childes.psy.cmu.edu/data/Slavic/Polish/Weist.zip">CHILDES</a>; it ls already fully transcribed. We removed word boundaries and replaced affricate symbols with corresponding stop-fricative sequences.

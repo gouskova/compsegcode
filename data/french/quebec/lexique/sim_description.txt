@@ -1,0 +1,1 @@
+In this simulation, the learner does not unify [ts] and [dz], but they are at the top in terms of inseparability scores (dz = 0.91, ts = 0.64).

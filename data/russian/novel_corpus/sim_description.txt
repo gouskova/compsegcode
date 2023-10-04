@@ -1,0 +1,1 @@
+This simulation demonstrates that token frequencies are not sufficient for the learner to identify [ts] as an affricate in this corpus of Russian. The dictionaries make for a better data source than this connected speech model.

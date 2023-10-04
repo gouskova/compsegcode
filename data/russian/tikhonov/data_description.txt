@@ -1,0 +1,1 @@
+The data source is Tikhonov's (2002) morphological dictionary of Russian, which can be downloaded in Cyrillic <a href="http://www.speakrus.ru/dict/index.htm#morpheme">here</a>. Transcription scripts are on <a href="https://github.com/gouskova/transcribers/tree/master/russian">GitHub</a>.

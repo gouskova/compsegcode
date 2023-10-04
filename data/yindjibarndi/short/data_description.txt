@@ -1,0 +1,1 @@
+This corpus contains all monosyllabic and disyllabic headwords words from Wordick's (1982) lexicon.

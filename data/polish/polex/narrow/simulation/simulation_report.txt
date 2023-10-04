@@ -1,0 +1,39 @@
+
+Searching for complex segments.
+Inseparability threshold: 1.0
+Alpha level for Fisher's Exact Test: 0.05
+Checking feature file...
+
+The new feature file is well-formed. all the segments can be uniquely identified.
+
+Getting consonants...
+p, b, m, f, v, k, g, x, t, d, ʈ, ɖ, c, ɟ, s, z, ʂ, ʐ, ɕ, ʑ, n, ɲ, r, l, w, j
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 1:
+c ɕ	5.675449459314571
+ɟ ʑ	4.57653931012281
+ʈ ʂ	2.8344899624865896
+t s	1.2871373485943693
+
+Checking learner-generated feature file...
+
+The new feature file is well-formed. all the segments can be uniquely identified.
+
+
+Wrote modified learning data to /iteration1/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 1.
+
+Getting consonants...
+p, b, m, f, v, k, g, x, t, d, ʈ, ɖ, c, ɟ, s, z, ʂ, ʐ, ɕ, ʑ, n, ɲ, r, l, w, j, ts, ʈʂ, cɕ, ɟʑ
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+No complex segments identified in LearningData.txt. That is the final version of your learning data.
+
+Simulation Finished

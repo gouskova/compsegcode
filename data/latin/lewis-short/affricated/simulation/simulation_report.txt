@@ -1,0 +1,43 @@
+
+Searching for complex segments.
+Inseparability threshold: 1.0
+Alpha level for Fisher's Exact Test: 0.05
+Checking feature file...
+
+The new feature file is well-formed. all the segments can be uniquely identified.
+
+Getting consonants...
+p, p:, b, b:, m, m:, f, f:, w, k, k:, g, g:, t, t:, d, d:, s, z, ʃ, ʒ, s:, n, n:, r, r:, l, l:, j, h
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 1:
+d z	3.6787301614945473
+t ʃ	1.5574459792029804
+d ʒ	1.4748579484685562
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+d  has a subset of the features of dz
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration1/LearningData.txt
+
+The following segments are in the feature file but are not in the data file, and will be removed from feature file:
+ʃ ʒ
+Examining data from iteration 1.
+
+Getting consonants...
+p, p:, b, b:, m, m:, f, f:, w, k, k:, g, g:, t, t:, d, d:, s, z, s:, n, n:, r, r:, l, l:, j, h, tʃ, dz, dʒ
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+No complex segments identified in LearningData.txt. That is the final version of your learning data.
+
+Simulation Finished

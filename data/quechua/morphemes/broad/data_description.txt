@@ -1,0 +1,1 @@
+This morpheme list is tokenized from the morpheme-segmented word list. Nasal place assimilation is not transcribed.

@@ -1,0 +1,9 @@
+Wargamay is described by Dixon (1981). Dixon is the only source on Wargamay, and he does not posit complex segments for the language. But he does mention a few suggestive facts:
+<li>Voiced stop-initial morphemes sporadically appear with prothetic nasals, e.g., /gubi-bulu/ --> [gubimbulu] 'wise man'.</li>
+<li>NC clusters do not have to be homorganic, but homorganic ones are four times more common than non-homorganic ones (Dixon 1981:23).</li>
+<br>
+The learner's outcome in this case is similar to Sundanese: it identifies homorganic nasal-stop clusters as complex segments. From the point of view of distribution, NC clusters are inseparable. Thus, just as in Sundanese, this could be a learning-theoretic argument for a complex segment analysis.
+<br>
+<b>Dixon, Robert M. W.</b> 1981. Wargamay. In Handbook of Australian Languages, ed. Robert M. W. Dixon and B. J. Blake, volume 2. Amsterdam: John Benjamins.<br>
+The data source is Hayes and Wilson's (2008) lexicon for Wargamay, available on <a href="https://linguistics.ucla.edu/people/hayes/Phonotactics/index.htm">Bruce's site</a>.
+

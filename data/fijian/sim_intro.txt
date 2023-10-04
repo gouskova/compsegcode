@@ -1,0 +1,3 @@
+The Fijian simulation is described in detail in the early sections of the paper.<br>The corpus is from <a href="http://crubadan.org/languages/fj">An Crúbadán</a>, which is compiled from online texts. There are quite a few English words in the data so they were eliminated by intersecting the corpus with Celex, and by removing any remaining words that had non-Fijian orthographic consonant clusters. See <a href="https://github.com/gouskova/transcribers/tree/master/fijian">here</a> for more.
+
+

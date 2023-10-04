@@ -1,0 +1,3 @@
+Hebrew is discussed in the paper briefly. The learner finds [ts] but not other complex segments. The status of [tʃ] and [dʒ] in Hebrew is not entirely clear; <a href="https://www.jstor.org/stable/4178194?seq=1#page_scan_tab_contents">Bolozky (1980)</a> discusses some arguments in favor of treating these foreign affricates as clusters.<br>The Hebrew dataset is the <a href="http://phonologist.org/LLHN/">Living Lexicon of Hebrew Nouns</a> by Michael Becker and Shmuel Bolozky. The transcriptions are
+original, with the only change being that we replaced affricate symbols with cluster transcriptions.<br>
+

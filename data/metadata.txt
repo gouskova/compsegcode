@@ -1,0 +1,26 @@
+language	family	iso	varieties_analyzed	complex_segments
+aymara	Aymaran	aym	Bolivian	tʃ, tʃ', tʃʰ
+english	Indo-European	eng	American	tʃ, dʒ
+fijian	Austronesian	fij	Boumaa	mb, nd, ŋɡ, nr, tʃ, ndʒ
+french	Indo-European	fra	European / Quebecois	none / ts, dz
+german	Indo-European	ger	Standard	ts*, pf*, tʃ*, dʒ*
+greek	Indo-European	ell	Modern standard	ts*, dz* 
+hebrew	Semitic	heb	Modern standard	ts, tʃ*, dʒ*
+hungarian	Uralic	hun	Standard	ts, tʃ, dʒ*
+italian	Indo-European	ita	Standard	tʃ, ts, dʒ, dz
+latin	Indo-European	lat	Classical / Vulgar 	kw*, ɡw* / ts, dz, tʃ, dʒ
+mbay	Nilo-Saharan	myb		mb, nd, ŋɡ, nɟ
+mongolian	Mongolic	mon	Khalkha	ts, tsʰ, tʃ, tʃʰ
+navajo	Athabaskan	nav		ts, ts', dz, tʃ, tʃ', dʒ, tɬ, tɬ', dɮ
+ngbaka	Niger-Congo	nga		mb, nd, nz, ŋɡ, ŋm, kp, ɡb, ŋmɡb, vw, nw
+polish	Indo-European	pol	Standard	ts, tɕ, ʈʂ, dz, dʑ, ɖʐ, palatalized*
+quechua	Quechuan	qwe	Bolivian/Peru	tʃ, tʃ', tʃʰ
+russian	Indo-European	rus	Standard	ts, tɕ
+shona	Niger-Congo	sna	Zezuru	affricates, labialized, coronal-velar*, prenasalized
+spanish	Indo-European	spa	Mexican	tʃ
+sundanese	Austronesian	sun		mb*, nd*, ŋɡ*, ɲc*
+tswana	Niger-Congo	tsn	Sengwato / Standard	varies by dialect
+turkish	Turkic	tur	Standard	tʃ, dʒ
+wargamay	Pama-Nyungan	wgy		none
+wolof	Niger-Congo	wol		mb, nd, ŋɡ, ɴq, mp*, nt*, ŋk*, ɴq*	
+yindjibarndi	Pama-Nyungan	yij		none

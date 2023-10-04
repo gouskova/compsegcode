@@ -1,0 +1,3 @@
+Latin has its own section in the paper, which reviews the arguments for [kw] and [gw] as complex segments. We find these arguments to be dubious.
+
+The "Affricated" version of the Latin dataset was created to test the hypothesis that complex segments have the distributions of singleton consonants because they come from singletons affected by systematic sound change. This simulation applies palatalization sound changes to Latin to create "pseudo-Italian" (Vulgar Latin, really). 

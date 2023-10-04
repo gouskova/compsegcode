@@ -1,0 +1,1 @@
+This version of the learning data assumes that geminates are represented as single segments in the initial state.  (Note that all vowels are transcribed as "v", making this corpus useful for the investigation of consonant distribution only.)

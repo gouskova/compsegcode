@@ -1,0 +1,7 @@
+Aymara is not discussed in the paper. This case is interesting in that Aymara shares many features in common with Quechua, but the case study works out rather differently because of the differences between the languages' phonotactics and morphology. Like Quechua, Aymara is normally analyzed as having affricates in its stop inventory: [tʃ, tʃʰ, tʃ']. The arguments for their inclusion are exactly parallel to the ones in Quechua. But Aymara
+differs from Quechua in one key respect: it has a rule of vowel deletion at morpheme boundaries, which creates many derived consonant clusters. This rule enriches the inventory of consonant clusters so much that the learner "misfires" only slightly in Aymara when trained on words: it finds [px], a cluster that occurs only at morpheme boundaries, and it fails to find [tʃʰ], a sequence that is too separable in the data (even though there is no aspirated ʃ́ʰ in the language).</br>
+
+The learner succeeds in identifying all and only the complex segments posited for Aymara when trained on roots, just as it does in Quechua.</br>
+
+The data come from <a href="https://link.springer.com/article/10.1007/s11049-019-09446-x">Gouskova and Gallagher (2019, NLLT)</a> and <a href="https://www.glossa-journal.org/articles/10.5334/gjgl.826/">Gallagher et al. (2019, Glossa)</a>; the only change we made is to modify the feature set and to convert the data into IPA.
+

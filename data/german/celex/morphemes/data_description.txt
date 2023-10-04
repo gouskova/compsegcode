@@ -1,0 +1,1 @@
+This morpheme list was created by tokenizing the transcriptions with morpheme boundaries, available in the Celex lemma list for German. We simply split the transcribed lemmata on # and +, without any further filtering. See <a href="https://github.com/gouskova/transcribers/tree/master/german">here</a> for more.

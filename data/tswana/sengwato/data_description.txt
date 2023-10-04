@@ -1,0 +1,2 @@
+The Sengwato corpus was created by converting Denis Creissels' 1996 electronic dictionary from <a href="http://www.cbold.ish-lyon.cnrs.fr/">CBOLD</a> into Sengwato by script. Since the standard dialect has neutralized labiocoronal consonants with affricates (e.g., Sengwato [mptʃa] 'dog' is [ntʃa] in other dialects), we had to add/fix some words by hand, based on One Tlale Boyer's 2005 Georgetown thesis. See <a href="https://github.com/gouskova/transcribers/tree/master/tswana">for
+more</a>.

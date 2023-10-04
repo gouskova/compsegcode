@@ -1,0 +1,1 @@
+<p>See the description of the "narrow" POLEX simulation for data provenance and transcription script. The "wide" thing here refers to the transcription of [tɕ, dʑ]. The learner finds the voiceless affricate even if it is transcribed with [t] as its first half, but it finds the voiced affricate only when it is given a narrow transcription.</p>

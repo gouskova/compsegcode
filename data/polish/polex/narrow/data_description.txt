@@ -1,0 +1,3 @@
+<p>The data for this simulation come from POLEX (Vetulani 2000). All of the ~98,000 words are included. The transcription script for converting the POLEX ASCII pseudo-orthography into IPA is <a href="http://github.com/gouskova/transcribers/tree/master/polish">here</a>. Voicing assimilation is transcribed in this simulation. The difference between the "narrow" and the "wide" transcriptions are in the representation of orthographic <ć, dź>: in the narrow transcription, they are
+transcribed as [cɕ, ɟʑ].</p> 
+

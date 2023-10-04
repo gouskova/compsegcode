@@ -1,0 +1,1 @@
+Data source: <a href="http://celex.mpi.nl/">Celex</a> lemmas. The Celex transcriptions assume British English pronunciations. 

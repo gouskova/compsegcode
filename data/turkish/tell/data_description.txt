@@ -1,0 +1,1 @@
+This includes all the words from <a href="http://linguistics.berkeley.edu/TELL/">TELL</a> paradigms. We used the source's IPA transcriptions.

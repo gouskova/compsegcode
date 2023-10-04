@@ -1,0 +1,1 @@
+The dictionary we used explicitly marks loanwords; these are included in this version of the data. As you can see, the simulation results are qualitatively the same whether loanwords are included or not, but the simulation with loanwords takes more iterations to arrive at the same inventory.

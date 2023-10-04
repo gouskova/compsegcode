@@ -1,0 +1,1 @@
+This simulation demonstrates that not only does it not help to break down aspirated and ejective plosives into sequences in this case--it actually makes things worse. Certain laryngeally marked stops [kʰ, t'] are so infrequent that they fail to be unified, whereas clusters common in morphologically complex words do get unified.

@@ -1,0 +1,1 @@
+Data source: Carnegie Mellon University pronunciation dictionary, as prepared by <a href="https://linguistics.ucla.edu/people/hayes/PhonologicalNaturalness/index.htm">Bruce Hayes and Jamie White</a>.

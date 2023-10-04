@@ -1,0 +1,1 @@
+Root/stem list prepared by <a href="https://wp.nyu.edu/szaboildi/">Ildi Emese Szabó</a> from the Szótár AdatBázis 1.0 dictionary (<a href="https://github.com/gouskova/transcribers/tree/master/hungarian">details here</a>). Only the broad transcription of affricates, [tʃ] and [dʒ], was tested in this simulation. 

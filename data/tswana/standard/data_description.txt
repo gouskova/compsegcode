@@ -1,0 +1,1 @@
+This is a more or less unmodified version of Creissels' 1996 dictionary. See <a href="https://github.com/gouskova/transcribers/tree/master/tswana">here</a> for details.

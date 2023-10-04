@@ -1,0 +1,1 @@
+This corpus was created on the basis of Zaliznjak's paradigms and the Tikhonov morphologically parsed dictionary. It includes monomorphemic words (either in the genitive plural or the nominative singular, depending on the declension class).

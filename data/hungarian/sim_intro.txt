@@ -1,0 +1,4 @@
+<p>Hungarian is analyzed as having the alveolar and postalveolar/palatal affricates in Siptár and Törkenczy's (2000) book, Phonology of Hungarian. The arguments, we think, are not super clear, since Hungarian is fairly permissive phonotactically. There are stop-fricative sequences in the language, and while they are etymologically foreign, they can occur in the same environments as the purported affricates. The weakness of the arguments is in line with the inconsistent findings of the
+learner.</p>
+<p>The closest the learner comes to the inventory posited by traditional analyses of the langugae is when it is trained on the list of stems/roots. This could be due to the agglutinative morphology of the language; the clusters found in morphologically complex words are more diverse than those in morphemes, so the affricates' share of the distribution is lower in words than in morphemes.</p> 
+

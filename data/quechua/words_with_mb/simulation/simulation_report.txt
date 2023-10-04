@@ -1,0 +1,1250 @@
+
+Searching for complex segments.
+Inseparability threshold: 1.0
+Alpha level for Fisher's Exact Test: 0.05
+Checking feature file...
+
+The new feature file is well-formed. all the segments can be uniquely identified.
+
+Getting consonants...
+p, t, k, q, p', t', k', q', pʰ, tʰ, kʰ, qʰ, s, ʃ, ʃ', ʃʰ, x, h, m, n, ɲ, r, l, ʎ, j, w, ŋ, ɴ
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 1:
+t ʃ	8.506694245631584
+ŋ k	5.212338807857545
+ɴ q	2.053969302180659
+s q	1.792250963196204
+j k	1.0203061930355914
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+k  has a subset of the features of jk
+q  has a subset of the features of sq
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration1/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 1.
+
+Getting consonants...
+p, t, k, q, p', t', k', q', pʰ, tʰ, kʰ, qʰ, s, ʃ, ʃ', ʃʰ, x, h, m, n, ɲ, r, l, ʎ, j, w, ŋ, ɴ, tʃ, sq, jk, ŋk, ɴq
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 2:
+ŋ k'	20.24203015837264
+t ʃ'	6.9665766259813475
+ɲ tʃ	5.932795397474309
+r q	3.5568694157186296
+t ʃʰ	2.591226671858916
+n t	1.168463219368553
+ʎ p'	1.0640713361575944
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+k  has a subset of the features of jk
+q  has a subset of the features of sq
+q  has a subset of the features of rq
+p'  has a subset of the features of ʎp'
+sq  has a subset of the features of rq
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration2/LearningData.txt
+
+The following segments are in the feature file but are not in the data file, and will be removed from feature file:
+ʃ' ʃʰ
+Examining data from iteration 2.
+
+Getting consonants...
+p, t, k, q, p', t', k', q', pʰ, tʰ, kʰ, qʰ, s, ʃ, x, h, m, n, ɲ, r, l, ʎ, j, w, ŋ, ɴ, tʃ, sq, jk, ŋk, ɴq, tʃ', tʃʰ, nt, ɲtʃ, rq, ʎp', ŋk'
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 3:
+r p	2.135672558859759
+s p	2.09742953770573
+r l	1.8846436092353025
+x t	1.266405414585756
+ɴ qʰ	1.1974979027652708
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of sp
+p  has a subset of the features of rp
+t  has a subset of the features of xt
+k  has a subset of the features of jk
+q  has a subset of the features of sq
+q  has a subset of the features of rq
+p'  has a subset of the features of ʎp'
+l  has a subset of the features of rl
+sq  has a subset of the features of rq
+sp  has a subset of the features of rp
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration3/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 3.
+
+Getting consonants...
+p, t, k, q, p', t', k', q', pʰ, tʰ, kʰ, qʰ, s, ʃ, x, h, m, n, ɲ, r, l, ʎ, j, w, ŋ, ɴ, tʃ, sq, jk, ŋk, ɴq, tʃ', tʃʰ, nt, ɲtʃ, rq, ʎp', ŋk', sp, xt, rp, rl, ɴqʰ
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 4:
+n t'	1.8392462373423402
+s k'	1.6116822663870412
+j k'	1.5643431343970347
+x s	1.5214028693834922
+m p	1.45453773017289
+ʎ q	1.3282438701780437
+r qʰ	1.1118233019211916
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of sp
+p  has a subset of the features of rp
+t  has a subset of the features of xt
+k  has a subset of the features of jk
+q  has a subset of the features of sq
+q  has a subset of the features of rq
+q  has a subset of the features of ʎq
+p'  has a subset of the features of ʎp'
+k'  has a subset of the features of sk'
+k'  has a subset of the features of jk'
+qʰ  has a subset of the features of rqʰ
+s  has a subset of the features of xs
+x  has a subset of the features of xs
+l  has a subset of the features of rl
+sq  has a subset of the features of rq
+sq  has a subset of the features of ʎq
+rq  has a subset of the features of ʎq
+sp  has a subset of the features of rp
+sk'  has a subset of the features of jk'
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration4/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 4.
+
+Getting consonants...
+p, t, k, q, p', t', k', q', pʰ, tʰ, kʰ, qʰ, s, ʃ, x, h, m, n, ɲ, r, l, ʎ, j, w, ŋ, ɴ, tʃ, sq, jk, ŋk, ɴq, tʃ', tʃʰ, nt, ɲtʃ, rq, ʎp', ŋk', sp, xt, rp, rl, ɴqʰ, sk', xs, mp, nt', rqʰ, ʎq, jk'
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 5:
+j t	1.7322043514403687
+x ʎ	1.1982783529992813
+j w	1.1486078615990616
+s k	1.102705518011411
+s q'	1.019944873855413
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of sp
+p  has a subset of the features of rp
+t  has a subset of the features of xt
+t  has a subset of the features of jt
+k  has a subset of the features of jk
+k  has a subset of the features of sk
+q  has a subset of the features of sq
+q  has a subset of the features of rq
+q  has a subset of the features of ʎq
+p'  has a subset of the features of ʎp'
+k'  has a subset of the features of sk'
+k'  has a subset of the features of jk'
+q'  has a subset of the features of sq'
+qʰ  has a subset of the features of rqʰ
+s  has a subset of the features of xs
+x  has a subset of the features of xs
+l  has a subset of the features of rl
+ʎ  has a subset of the features of xʎ
+w  has a subset of the features of jw
+sq  has a subset of the features of rq
+sq  has a subset of the features of ʎq
+jk  has a subset of the features of sk
+rq  has a subset of the features of ʎq
+sp  has a subset of the features of rp
+sk'  has a subset of the features of jk'
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration5/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 5.
+
+Getting consonants...
+p, t, k, q, p', t', k', q', pʰ, tʰ, kʰ, qʰ, s, ʃ, x, h, m, n, ɲ, r, l, ʎ, j, w, ŋ, ɴ, tʃ, sq, jk, ŋk, ɴq, tʃ', tʃʰ, nt, ɲtʃ, rq, ʎp', ŋk', sp, xt, rp, rl, ɴqʰ, sk', xs, mp, nt', rqʰ, ʎq, jk', sk, sq', xʎ, jt, jw
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 6:
+ʃ k	1.6211925915958405
+w s	1.5545760208359205
+r k'	1.3247903457799903
+w p	1.2583659560294262
+r m	1.2152789111204267
+m p'	1.1462668393292155
+l t	1.107342982495799
+j ʎ	1.0525674897337498
+ʎ p	1.0524779545904486
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of sp
+p  has a subset of the features of rp
+p  has a subset of the features of ʎp
+p  has a subset of the features of wp
+t  has a subset of the features of xt
+t  has a subset of the features of jt
+t  has a subset of the features of lt
+k  has a subset of the features of jk
+k  has a subset of the features of sk
+k  has a subset of the features of ʃk
+q  has a subset of the features of sq
+q  has a subset of the features of rq
+q  has a subset of the features of ʎq
+p'  has a subset of the features of ʎp'
+k'  has a subset of the features of sk'
+k'  has a subset of the features of jk'
+k'  has a subset of the features of rk'
+q'  has a subset of the features of sq'
+qʰ  has a subset of the features of rqʰ
+s  has a subset of the features of xs
+s  has a subset of the features of ws
+x  has a subset of the features of xs
+m  has a subset of the features of rm
+l  has a subset of the features of rl
+ʎ  has a subset of the features of xʎ
+ʎ  has a subset of the features of jʎ
+w  has a subset of the features of jw
+sq  has a subset of the features of rq
+sq  has a subset of the features of ʎq
+jk  has a subset of the features of sk
+jk  has a subset of the features of ʃk
+rq  has a subset of the features of ʎq
+sp  has a subset of the features of rp
+sp  has a subset of the features of ʎp
+sp  has a subset of the features of wp
+rp  has a subset of the features of ʎp
+rp  has a subset of the features of wp
+sk'  has a subset of the features of jk'
+sk'  has a subset of the features of rk'
+jk'  has a subset of the features of rk'
+sk  has a subset of the features of ʃk
+jt  has a subset of the features of lt
+ʎp  has a subset of the features of wp
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration6/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 6.
+
+Getting consonants...
+p, t, k, q, p', t', k', q', pʰ, tʰ, kʰ, qʰ, s, ʃ, x, h, m, n, ɲ, r, l, ʎ, j, w, ŋ, ɴ, tʃ, sq, jk, ŋk, ɴq, tʃ', tʃʰ, nt, ɲtʃ, rq, ʎp', ŋk', sp, xt, rp, rl, ɴqʰ, sk', xs, mp, nt', rqʰ, ʎq, jk', sk, sq', xʎ, jt, jw, ʃk, mp', rk', rm, lt, ʎp, jʎ, wp, ws
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 7:
+ʎ tʃ'	2.525928969253983
+ɲ tʃ'	2.1963271386163594
+ʃ kʰ	1.8984510213475347
+x r	1.2904755402936234
+s t'	1.2328797137868763
+x tʃ	1.1646541751149952
+j n	1.1309844648283358
+j q	1.1123132060524108
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of sp
+p  has a subset of the features of rp
+p  has a subset of the features of ʎp
+p  has a subset of the features of wp
+t  has a subset of the features of xt
+t  has a subset of the features of jt
+t  has a subset of the features of lt
+k  has a subset of the features of jk
+k  has a subset of the features of sk
+k  has a subset of the features of ʃk
+q  has a subset of the features of sq
+q  has a subset of the features of rq
+q  has a subset of the features of ʎq
+q  has a subset of the features of jq
+p'  has a subset of the features of ʎp'
+t'  has a subset of the features of st'
+k'  has a subset of the features of sk'
+k'  has a subset of the features of jk'
+k'  has a subset of the features of rk'
+q'  has a subset of the features of sq'
+kʰ  has a subset of the features of ʃkʰ
+qʰ  has a subset of the features of rqʰ
+s  has a subset of the features of xs
+s  has a subset of the features of ws
+x  has a subset of the features of xs
+m  has a subset of the features of rm
+n  has a subset of the features of jn
+r  has a subset of the features of xr
+l  has a subset of the features of rl
+ʎ  has a subset of the features of xʎ
+ʎ  has a subset of the features of jʎ
+w  has a subset of the features of jw
+tʃ  has a subset of the features of xtʃ
+sq  has a subset of the features of rq
+sq  has a subset of the features of ʎq
+sq  has a subset of the features of jq
+jk  has a subset of the features of sk
+jk  has a subset of the features of ʃk
+tʃ'  has a subset of the features of ʎtʃ'
+rq  has a subset of the features of ʎq
+rq  has a subset of the features of jq
+sp  has a subset of the features of rp
+sp  has a subset of the features of ʎp
+sp  has a subset of the features of wp
+rp  has a subset of the features of ʎp
+rp  has a subset of the features of wp
+sk'  has a subset of the features of jk'
+sk'  has a subset of the features of rk'
+ʎq  has a subset of the features of jq
+jk'  has a subset of the features of rk'
+sk  has a subset of the features of ʃk
+jt  has a subset of the features of lt
+ʎp  has a subset of the features of wp
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration7/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 7.
+
+Getting consonants...
+p, t, k, q, p', t', k', q', pʰ, tʰ, kʰ, qʰ, s, ʃ, x, h, m, n, ɲ, r, l, ʎ, j, w, ŋ, ɴ, tʃ, sq, jk, ŋk, ɴq, tʃ', tʃʰ, nt, ɲtʃ, rq, ʎp', ŋk', sp, xt, rp, rl, ɴqʰ, sk', xs, mp, nt', rqʰ, ʎq, jk', sk, sq', xʎ, jt, jw, ʃk, mp', rk', rm, lt, ʎp, jʎ, wp, ws, st', ʃkʰ, xr, xtʃ, ɲtʃ', ʎtʃ', jq, jn
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 8:
+j tʃ'	2.111326107744367
+x t'	1.7736088459066188
+r k	1.764106943274664
+j m	1.7045206648140079
+r q'	1.1292542856145733
+x tʃ'	1.078730042437509
+l w	1.0786976518632014
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of sp
+p  has a subset of the features of rp
+p  has a subset of the features of ʎp
+p  has a subset of the features of wp
+t  has a subset of the features of xt
+t  has a subset of the features of jt
+t  has a subset of the features of lt
+k  has a subset of the features of jk
+k  has a subset of the features of sk
+k  has a subset of the features of ʃk
+k  has a subset of the features of rk
+q  has a subset of the features of sq
+q  has a subset of the features of rq
+q  has a subset of the features of ʎq
+q  has a subset of the features of jq
+p'  has a subset of the features of ʎp'
+t'  has a subset of the features of st'
+t'  has a subset of the features of xt'
+k'  has a subset of the features of sk'
+k'  has a subset of the features of jk'
+k'  has a subset of the features of rk'
+q'  has a subset of the features of sq'
+q'  has a subset of the features of rq'
+kʰ  has a subset of the features of ʃkʰ
+qʰ  has a subset of the features of rqʰ
+s  has a subset of the features of xs
+s  has a subset of the features of ws
+x  has a subset of the features of xs
+m  has a subset of the features of rm
+m  has a subset of the features of jm
+n  has a subset of the features of jn
+r  has a subset of the features of xr
+l  has a subset of the features of rl
+ʎ  has a subset of the features of xʎ
+ʎ  has a subset of the features of jʎ
+w  has a subset of the features of jw
+w  has a subset of the features of lw
+tʃ  has a subset of the features of xtʃ
+sq  has a subset of the features of rq
+sq  has a subset of the features of ʎq
+sq  has a subset of the features of jq
+jk  has a subset of the features of sk
+jk  has a subset of the features of ʃk
+jk  has a subset of the features of rk
+tʃ'  has a subset of the features of ʎtʃ'
+tʃ'  has a subset of the features of xtʃ'
+tʃ'  has a subset of the features of jtʃ'
+rq  has a subset of the features of ʎq
+rq  has a subset of the features of jq
+sp  has a subset of the features of rp
+sp  has a subset of the features of ʎp
+sp  has a subset of the features of wp
+rp  has a subset of the features of ʎp
+rp  has a subset of the features of wp
+sk'  has a subset of the features of jk'
+sk'  has a subset of the features of rk'
+ʎq  has a subset of the features of jq
+jk'  has a subset of the features of rk'
+sk  has a subset of the features of ʃk
+sk  has a subset of the features of rk
+sq'  has a subset of the features of rq'
+jt  has a subset of the features of lt
+jw  has a subset of the features of lw
+ʃk  has a subset of the features of rk
+rm  has a subset of the features of jm
+ʎp  has a subset of the features of wp
+st'  has a subset of the features of xt'
+ʎtʃ'  has a subset of the features of xtʃ'
+ʎtʃ'  has a subset of the features of jtʃ'
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration8/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 8.
+
+Getting consonants...
+p, t, k, q, p', t', k', q', pʰ, tʰ, kʰ, qʰ, s, ʃ, x, h, m, n, ɲ, r, l, ʎ, j, w, ŋ, ɴ, tʃ, sq, jk, ŋk, ɴq, tʃ', tʃʰ, nt, ɲtʃ, rq, ʎp', ŋk', sp, xt, rp, rl, ɴqʰ, sk', xs, mp, nt', rqʰ, ʎq, jk', sk, sq', xʎ, jt, jw, ʃk, mp', rk', rm, lt, ʎp, jʎ, wp, ws, st', ʃkʰ, xr, xtʃ, ɲtʃ', ʎtʃ', jq, jn, xt', xtʃ', rk, rq', lw, jm, jtʃ'
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 9:
+j q'	1.719844427411198
+j r	1.4678720409443948
+m pʰ	1.418612147550192
+l m	1.4176145300062046
+s p'	1.4096782855607344
+x j	1.4067217292449319
+r kʰ	1.246511942520314
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of sp
+p  has a subset of the features of rp
+p  has a subset of the features of ʎp
+p  has a subset of the features of wp
+t  has a subset of the features of xt
+t  has a subset of the features of jt
+t  has a subset of the features of lt
+k  has a subset of the features of jk
+k  has a subset of the features of sk
+k  has a subset of the features of ʃk
+k  has a subset of the features of rk
+q  has a subset of the features of sq
+q  has a subset of the features of rq
+q  has a subset of the features of ʎq
+q  has a subset of the features of jq
+p'  has a subset of the features of ʎp'
+p'  has a subset of the features of sp'
+t'  has a subset of the features of st'
+t'  has a subset of the features of xt'
+k'  has a subset of the features of sk'
+k'  has a subset of the features of jk'
+k'  has a subset of the features of rk'
+q'  has a subset of the features of sq'
+q'  has a subset of the features of rq'
+q'  has a subset of the features of jq'
+kʰ  has a subset of the features of ʃkʰ
+kʰ  has a subset of the features of rkʰ
+qʰ  has a subset of the features of rqʰ
+s  has a subset of the features of xs
+s  has a subset of the features of ws
+x  has a subset of the features of xs
+m  has a subset of the features of rm
+m  has a subset of the features of jm
+m  has a subset of the features of lm
+n  has a subset of the features of jn
+r  has a subset of the features of xr
+r  has a subset of the features of jr
+l  has a subset of the features of rl
+ʎ  has a subset of the features of xʎ
+ʎ  has a subset of the features of jʎ
+j  has a subset of the features of xj
+w  has a subset of the features of jw
+w  has a subset of the features of lw
+tʃ  has a subset of the features of xtʃ
+sq  has a subset of the features of rq
+sq  has a subset of the features of ʎq
+sq  has a subset of the features of jq
+jk  has a subset of the features of sk
+jk  has a subset of the features of ʃk
+jk  has a subset of the features of rk
+tʃ'  has a subset of the features of ʎtʃ'
+tʃ'  has a subset of the features of xtʃ'
+tʃ'  has a subset of the features of jtʃ'
+rq  has a subset of the features of ʎq
+rq  has a subset of the features of jq
+ʎp'  has a subset of the features of sp'
+sp  has a subset of the features of rp
+sp  has a subset of the features of ʎp
+sp  has a subset of the features of wp
+rp  has a subset of the features of ʎp
+rp  has a subset of the features of wp
+sk'  has a subset of the features of jk'
+sk'  has a subset of the features of rk'
+ʎq  has a subset of the features of jq
+jk'  has a subset of the features of rk'
+sk  has a subset of the features of ʃk
+sk  has a subset of the features of rk
+sq'  has a subset of the features of rq'
+sq'  has a subset of the features of jq'
+jt  has a subset of the features of lt
+jw  has a subset of the features of lw
+ʃk  has a subset of the features of rk
+rm  has a subset of the features of jm
+rm  has a subset of the features of lm
+ʎp  has a subset of the features of wp
+st'  has a subset of the features of xt'
+ʃkʰ  has a subset of the features of rkʰ
+ʎtʃ'  has a subset of the features of xtʃ'
+ʎtʃ'  has a subset of the features of jtʃ'
+rq'  has a subset of the features of jq'
+jm  has a subset of the features of lm
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration9/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 9.
+
+Getting consonants...
+p, t, k, q, p', t', k', q', pʰ, tʰ, kʰ, qʰ, s, ʃ, x, h, m, n, ɲ, r, l, ʎ, j, w, ŋ, ɴ, tʃ, sq, jk, ŋk, ɴq, tʃ', tʃʰ, nt, ɲtʃ, rq, ʎp', ŋk', sp, xt, rp, rl, ɴqʰ, sk', xs, mp, nt', rqʰ, ʎq, jk', sk, sq', xʎ, jt, jw, ʃk, mp', rk', rm, lt, ʎp, jʎ, wp, ws, st', ʃkʰ, xr, xtʃ, ɲtʃ', ʎtʃ', jq, jn, xt', xtʃ', rk, rq', lw, jm, jtʃ', sp', xj, mpʰ, rkʰ, lm, jq', jr
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 10:
+ʃ w	1.521771089723871
+j s	1.4937664814742284
+r w	1.388320159649076
+x p	1.3572386818585613
+x w	1.1596802127751016
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of sp
+p  has a subset of the features of rp
+p  has a subset of the features of ʎp
+p  has a subset of the features of wp
+p  has a subset of the features of xp
+t  has a subset of the features of xt
+t  has a subset of the features of jt
+t  has a subset of the features of lt
+k  has a subset of the features of jk
+k  has a subset of the features of sk
+k  has a subset of the features of ʃk
+k  has a subset of the features of rk
+q  has a subset of the features of sq
+q  has a subset of the features of rq
+q  has a subset of the features of ʎq
+q  has a subset of the features of jq
+p'  has a subset of the features of ʎp'
+p'  has a subset of the features of sp'
+t'  has a subset of the features of st'
+t'  has a subset of the features of xt'
+k'  has a subset of the features of sk'
+k'  has a subset of the features of jk'
+k'  has a subset of the features of rk'
+q'  has a subset of the features of sq'
+q'  has a subset of the features of rq'
+q'  has a subset of the features of jq'
+kʰ  has a subset of the features of ʃkʰ
+kʰ  has a subset of the features of rkʰ
+qʰ  has a subset of the features of rqʰ
+s  has a subset of the features of xs
+s  has a subset of the features of ws
+s  has a subset of the features of js
+x  has a subset of the features of xs
+m  has a subset of the features of rm
+m  has a subset of the features of jm
+m  has a subset of the features of lm
+n  has a subset of the features of jn
+r  has a subset of the features of xr
+r  has a subset of the features of jr
+l  has a subset of the features of rl
+ʎ  has a subset of the features of xʎ
+ʎ  has a subset of the features of jʎ
+j  has a subset of the features of xj
+w  has a subset of the features of jw
+w  has a subset of the features of lw
+w  has a subset of the features of ʃw
+w  has a subset of the features of xw
+w  has a subset of the features of rw
+tʃ  has a subset of the features of xtʃ
+sq  has a subset of the features of rq
+sq  has a subset of the features of ʎq
+sq  has a subset of the features of jq
+jk  has a subset of the features of sk
+jk  has a subset of the features of ʃk
+jk  has a subset of the features of rk
+tʃ'  has a subset of the features of ʎtʃ'
+tʃ'  has a subset of the features of xtʃ'
+tʃ'  has a subset of the features of jtʃ'
+rq  has a subset of the features of ʎq
+rq  has a subset of the features of jq
+ʎp'  has a subset of the features of sp'
+sp  has a subset of the features of rp
+sp  has a subset of the features of ʎp
+sp  has a subset of the features of wp
+sp  has a subset of the features of xp
+rp  has a subset of the features of ʎp
+rp  has a subset of the features of wp
+rp  has a subset of the features of xp
+sk'  has a subset of the features of jk'
+sk'  has a subset of the features of rk'
+ʎq  has a subset of the features of jq
+jk'  has a subset of the features of rk'
+sk  has a subset of the features of ʃk
+sk  has a subset of the features of rk
+sq'  has a subset of the features of rq'
+sq'  has a subset of the features of jq'
+jt  has a subset of the features of lt
+jw  has a subset of the features of lw
+jw  has a subset of the features of ʃw
+jw  has a subset of the features of xw
+jw  has a subset of the features of rw
+ʃk  has a subset of the features of rk
+rm  has a subset of the features of jm
+rm  has a subset of the features of lm
+ʎp  has a subset of the features of wp
+ʎp  has a subset of the features of xp
+wp  has a subset of the features of xp
+ws  has a subset of the features of js
+st'  has a subset of the features of xt'
+ʃkʰ  has a subset of the features of rkʰ
+ʎtʃ'  has a subset of the features of xtʃ'
+ʎtʃ'  has a subset of the features of jtʃ'
+rq'  has a subset of the features of jq'
+lw  has a subset of the features of ʃw
+lw  has a subset of the features of xw
+lw  has a subset of the features of rw
+jm  has a subset of the features of lm
+ʃw  has a subset of the features of xw
+ʃw  has a subset of the features of rw
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration10/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 10.
+
+Getting consonants...
+p, t, k, q, p', t', k', q', pʰ, tʰ, kʰ, qʰ, s, ʃ, x, h, m, n, ɲ, r, l, ʎ, j, w, ŋ, ɴ, tʃ, sq, jk, ŋk, ɴq, tʃ', tʃʰ, nt, ɲtʃ, rq, ʎp', ŋk', sp, xt, rp, rl, ɴqʰ, sk', xs, mp, nt', rqʰ, ʎq, jk', sk, sq', xʎ, jt, jw, ʃk, mp', rk', rm, lt, ʎp, jʎ, wp, ws, st', ʃkʰ, xr, xtʃ, ɲtʃ', ʎtʃ', jq, jn, xt', xtʃ', rk, rq', lw, jm, jtʃ', sp', xj, mpʰ, rkʰ, lm, jq', jr, ʃw, xp, xw, rw, js
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 11:
+ʎ m	1.6485057227490192
+r t	1.3448997305586015
+n r	1.0409858251386368
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of sp
+p  has a subset of the features of rp
+p  has a subset of the features of ʎp
+p  has a subset of the features of wp
+p  has a subset of the features of xp
+t  has a subset of the features of xt
+t  has a subset of the features of jt
+t  has a subset of the features of lt
+t  has a subset of the features of rt
+k  has a subset of the features of jk
+k  has a subset of the features of sk
+k  has a subset of the features of ʃk
+k  has a subset of the features of rk
+q  has a subset of the features of sq
+q  has a subset of the features of rq
+q  has a subset of the features of ʎq
+q  has a subset of the features of jq
+p'  has a subset of the features of ʎp'
+p'  has a subset of the features of sp'
+t'  has a subset of the features of st'
+t'  has a subset of the features of xt'
+k'  has a subset of the features of sk'
+k'  has a subset of the features of jk'
+k'  has a subset of the features of rk'
+q'  has a subset of the features of sq'
+q'  has a subset of the features of rq'
+q'  has a subset of the features of jq'
+kʰ  has a subset of the features of ʃkʰ
+kʰ  has a subset of the features of rkʰ
+qʰ  has a subset of the features of rqʰ
+s  has a subset of the features of xs
+s  has a subset of the features of ws
+s  has a subset of the features of js
+x  has a subset of the features of xs
+m  has a subset of the features of rm
+m  has a subset of the features of jm
+m  has a subset of the features of lm
+m  has a subset of the features of ʎm
+n  has a subset of the features of jn
+r  has a subset of the features of xr
+r  has a subset of the features of jr
+l  has a subset of the features of rl
+ʎ  has a subset of the features of xʎ
+ʎ  has a subset of the features of jʎ
+j  has a subset of the features of xj
+w  has a subset of the features of jw
+w  has a subset of the features of lw
+w  has a subset of the features of ʃw
+w  has a subset of the features of xw
+w  has a subset of the features of rw
+tʃ  has a subset of the features of xtʃ
+sq  has a subset of the features of rq
+sq  has a subset of the features of ʎq
+sq  has a subset of the features of jq
+jk  has a subset of the features of sk
+jk  has a subset of the features of ʃk
+jk  has a subset of the features of rk
+tʃ'  has a subset of the features of ʎtʃ'
+tʃ'  has a subset of the features of xtʃ'
+tʃ'  has a subset of the features of jtʃ'
+rq  has a subset of the features of ʎq
+rq  has a subset of the features of jq
+ʎp'  has a subset of the features of sp'
+sp  has a subset of the features of rp
+sp  has a subset of the features of ʎp
+sp  has a subset of the features of wp
+sp  has a subset of the features of xp
+rp  has a subset of the features of ʎp
+rp  has a subset of the features of wp
+rp  has a subset of the features of xp
+sk'  has a subset of the features of jk'
+sk'  has a subset of the features of rk'
+ʎq  has a subset of the features of jq
+jk'  has a subset of the features of rk'
+sk  has a subset of the features of ʃk
+sk  has a subset of the features of rk
+sq'  has a subset of the features of rq'
+sq'  has a subset of the features of jq'
+jt  has a subset of the features of lt
+jt  has a subset of the features of rt
+jw  has a subset of the features of lw
+jw  has a subset of the features of ʃw
+jw  has a subset of the features of xw
+jw  has a subset of the features of rw
+ʃk  has a subset of the features of rk
+rm  has a subset of the features of jm
+rm  has a subset of the features of lm
+rm  has a subset of the features of ʎm
+lt  has a subset of the features of rt
+ʎp  has a subset of the features of wp
+ʎp  has a subset of the features of xp
+wp  has a subset of the features of xp
+ws  has a subset of the features of js
+st'  has a subset of the features of xt'
+ʃkʰ  has a subset of the features of rkʰ
+ʎtʃ'  has a subset of the features of xtʃ'
+ʎtʃ'  has a subset of the features of jtʃ'
+rq'  has a subset of the features of jq'
+lw  has a subset of the features of ʃw
+lw  has a subset of the features of xw
+lw  has a subset of the features of rw
+jm  has a subset of the features of lm
+jm  has a subset of the features of ʎm
+lm  has a subset of the features of ʎm
+ʃw  has a subset of the features of xw
+ʃw  has a subset of the features of rw
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration11/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 11.
+
+Getting consonants...
+p, t, k, q, p', t', k', q', pʰ, tʰ, kʰ, qʰ, s, ʃ, x, h, m, n, ɲ, r, l, ʎ, j, w, ŋ, ɴ, tʃ, sq, jk, ŋk, ɴq, tʃ', tʃʰ, nt, ɲtʃ, rq, ʎp', ŋk', sp, xt, rp, rl, ɴqʰ, sk', xs, mp, nt', rqʰ, ʎq, jk', sk, sq', xʎ, jt, jw, ʃk, mp', rk', rm, lt, ʎp, jʎ, wp, ws, st', ʃkʰ, xr, xtʃ, ɲtʃ', ʎtʃ', jq, jn, xt', xtʃ', rk, rq', lw, jm, jtʃ', sp', xj, mpʰ, rkʰ, lm, jq', jr, ʃw, xp, xw, rw, js, nr, rt, ʎm
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 12:
+s t	1.5389934011205435
+j tʃ	1.3234823344250455
+x n	1.1923837152757797
+m s	1.052048311619139
+ʎ k	1.0347475245698308
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of sp
+p  has a subset of the features of rp
+p  has a subset of the features of ʎp
+p  has a subset of the features of wp
+p  has a subset of the features of xp
+t  has a subset of the features of xt
+t  has a subset of the features of jt
+t  has a subset of the features of lt
+t  has a subset of the features of rt
+t  has a subset of the features of st
+k  has a subset of the features of jk
+k  has a subset of the features of sk
+k  has a subset of the features of ʃk
+k  has a subset of the features of rk
+k  has a subset of the features of ʎk
+q  has a subset of the features of sq
+q  has a subset of the features of rq
+q  has a subset of the features of ʎq
+q  has a subset of the features of jq
+p'  has a subset of the features of ʎp'
+p'  has a subset of the features of sp'
+t'  has a subset of the features of st'
+t'  has a subset of the features of xt'
+k'  has a subset of the features of sk'
+k'  has a subset of the features of jk'
+k'  has a subset of the features of rk'
+q'  has a subset of the features of sq'
+q'  has a subset of the features of rq'
+q'  has a subset of the features of jq'
+kʰ  has a subset of the features of ʃkʰ
+kʰ  has a subset of the features of rkʰ
+qʰ  has a subset of the features of rqʰ
+s  has a subset of the features of xs
+s  has a subset of the features of ws
+s  has a subset of the features of js
+x  has a subset of the features of xs
+m  has a subset of the features of rm
+m  has a subset of the features of jm
+m  has a subset of the features of lm
+m  has a subset of the features of ʎm
+n  has a subset of the features of jn
+r  has a subset of the features of xr
+r  has a subset of the features of jr
+l  has a subset of the features of rl
+ʎ  has a subset of the features of xʎ
+ʎ  has a subset of the features of jʎ
+j  has a subset of the features of xj
+w  has a subset of the features of jw
+w  has a subset of the features of lw
+w  has a subset of the features of ʃw
+w  has a subset of the features of xw
+w  has a subset of the features of rw
+tʃ  has a subset of the features of xtʃ
+tʃ  has a subset of the features of jtʃ
+sq  has a subset of the features of rq
+sq  has a subset of the features of ʎq
+sq  has a subset of the features of jq
+jk  has a subset of the features of sk
+jk  has a subset of the features of ʃk
+jk  has a subset of the features of rk
+jk  has a subset of the features of ʎk
+tʃ'  has a subset of the features of ʎtʃ'
+tʃ'  has a subset of the features of xtʃ'
+tʃ'  has a subset of the features of jtʃ'
+rq  has a subset of the features of ʎq
+rq  has a subset of the features of jq
+ʎp'  has a subset of the features of sp'
+sp  has a subset of the features of rp
+sp  has a subset of the features of ʎp
+sp  has a subset of the features of wp
+sp  has a subset of the features of xp
+rp  has a subset of the features of ʎp
+rp  has a subset of the features of wp
+rp  has a subset of the features of xp
+sk'  has a subset of the features of jk'
+sk'  has a subset of the features of rk'
+ʎq  has a subset of the features of jq
+jk'  has a subset of the features of rk'
+sk  has a subset of the features of ʃk
+sk  has a subset of the features of rk
+sk  has a subset of the features of ʎk
+sq'  has a subset of the features of rq'
+sq'  has a subset of the features of jq'
+jt  has a subset of the features of lt
+jt  has a subset of the features of rt
+jt  has a subset of the features of st
+jw  has a subset of the features of lw
+jw  has a subset of the features of ʃw
+jw  has a subset of the features of xw
+jw  has a subset of the features of rw
+ʃk  has a subset of the features of rk
+ʃk  has a subset of the features of ʎk
+rm  has a subset of the features of jm
+rm  has a subset of the features of lm
+rm  has a subset of the features of ʎm
+lt  has a subset of the features of rt
+lt  has a subset of the features of st
+ʎp  has a subset of the features of wp
+ʎp  has a subset of the features of xp
+wp  has a subset of the features of xp
+ws  has a subset of the features of js
+st'  has a subset of the features of xt'
+ʃkʰ  has a subset of the features of rkʰ
+ʎtʃ'  has a subset of the features of xtʃ'
+ʎtʃ'  has a subset of the features of jtʃ'
+rk  has a subset of the features of ʎk
+rq'  has a subset of the features of jq'
+lw  has a subset of the features of ʃw
+lw  has a subset of the features of xw
+lw  has a subset of the features of rw
+jm  has a subset of the features of lm
+jm  has a subset of the features of ʎm
+lm  has a subset of the features of ʎm
+ʃw  has a subset of the features of xw
+ʃw  has a subset of the features of rw
+rt  has a subset of the features of st
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration12/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 12.
+
+Getting consonants...
+p, t, k, q, p', t', k', q', pʰ, tʰ, kʰ, qʰ, s, ʃ, x, h, m, n, ɲ, r, l, ʎ, j, w, ŋ, ɴ, tʃ, sq, jk, ŋk, ɴq, tʃ', tʃʰ, nt, ɲtʃ, rq, ʎp', ŋk', sp, xt, rp, rl, ɴqʰ, sk', xs, mp, nt', rqʰ, ʎq, jk', sk, sq', xʎ, jt, jw, ʃk, mp', rk', rm, lt, ʎp, jʎ, wp, ws, st', ʃkʰ, xr, xtʃ, ɲtʃ', ʎtʃ', jq, jn, xt', xtʃ', rk, rq', lw, jm, jtʃ', sp', xj, mpʰ, rkʰ, lm, jq', jr, ʃw, xp, xw, rw, js, nr, rt, ʎm, st, xn, ms, ʎk, jtʃ
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 13:
+x m	2.018322172196499
+s m	1.359249271865479
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of sp
+p  has a subset of the features of rp
+p  has a subset of the features of ʎp
+p  has a subset of the features of wp
+p  has a subset of the features of xp
+t  has a subset of the features of xt
+t  has a subset of the features of jt
+t  has a subset of the features of lt
+t  has a subset of the features of rt
+t  has a subset of the features of st
+k  has a subset of the features of jk
+k  has a subset of the features of sk
+k  has a subset of the features of ʃk
+k  has a subset of the features of rk
+k  has a subset of the features of ʎk
+q  has a subset of the features of sq
+q  has a subset of the features of rq
+q  has a subset of the features of ʎq
+q  has a subset of the features of jq
+p'  has a subset of the features of ʎp'
+p'  has a subset of the features of sp'
+t'  has a subset of the features of st'
+t'  has a subset of the features of xt'
+k'  has a subset of the features of sk'
+k'  has a subset of the features of jk'
+k'  has a subset of the features of rk'
+q'  has a subset of the features of sq'
+q'  has a subset of the features of rq'
+q'  has a subset of the features of jq'
+kʰ  has a subset of the features of ʃkʰ
+kʰ  has a subset of the features of rkʰ
+qʰ  has a subset of the features of rqʰ
+s  has a subset of the features of xs
+s  has a subset of the features of ws
+s  has a subset of the features of js
+x  has a subset of the features of xs
+m  has a subset of the features of rm
+m  has a subset of the features of jm
+m  has a subset of the features of lm
+m  has a subset of the features of ʎm
+n  has a subset of the features of jn
+r  has a subset of the features of xr
+r  has a subset of the features of jr
+l  has a subset of the features of rl
+ʎ  has a subset of the features of xʎ
+ʎ  has a subset of the features of jʎ
+j  has a subset of the features of xj
+w  has a subset of the features of jw
+w  has a subset of the features of lw
+w  has a subset of the features of ʃw
+w  has a subset of the features of xw
+w  has a subset of the features of rw
+tʃ  has a subset of the features of xtʃ
+tʃ  has a subset of the features of jtʃ
+sq  has a subset of the features of rq
+sq  has a subset of the features of ʎq
+sq  has a subset of the features of jq
+jk  has a subset of the features of sk
+jk  has a subset of the features of ʃk
+jk  has a subset of the features of rk
+jk  has a subset of the features of ʎk
+tʃ'  has a subset of the features of ʎtʃ'
+tʃ'  has a subset of the features of xtʃ'
+tʃ'  has a subset of the features of jtʃ'
+rq  has a subset of the features of ʎq
+rq  has a subset of the features of jq
+ʎp'  has a subset of the features of sp'
+sp  has a subset of the features of rp
+sp  has a subset of the features of ʎp
+sp  has a subset of the features of wp
+sp  has a subset of the features of xp
+rp  has a subset of the features of ʎp
+rp  has a subset of the features of wp
+rp  has a subset of the features of xp
+sk'  has a subset of the features of jk'
+sk'  has a subset of the features of rk'
+ʎq  has a subset of the features of jq
+jk'  has a subset of the features of rk'
+sk  has a subset of the features of ʃk
+sk  has a subset of the features of rk
+sk  has a subset of the features of ʎk
+sq'  has a subset of the features of rq'
+sq'  has a subset of the features of jq'
+jt  has a subset of the features of lt
+jt  has a subset of the features of rt
+jt  has a subset of the features of st
+jw  has a subset of the features of lw
+jw  has a subset of the features of ʃw
+jw  has a subset of the features of xw
+jw  has a subset of the features of rw
+ʃk  has a subset of the features of rk
+ʃk  has a subset of the features of ʎk
+rm  has a subset of the features of jm
+rm  has a subset of the features of lm
+rm  has a subset of the features of ʎm
+lt  has a subset of the features of rt
+lt  has a subset of the features of st
+ʎp  has a subset of the features of wp
+ʎp  has a subset of the features of xp
+wp  has a subset of the features of xp
+ws  has a subset of the features of js
+st'  has a subset of the features of xt'
+ʃkʰ  has a subset of the features of rkʰ
+ʎtʃ'  has a subset of the features of xtʃ'
+ʎtʃ'  has a subset of the features of jtʃ'
+rk  has a subset of the features of ʎk
+rq'  has a subset of the features of jq'
+lw  has a subset of the features of ʃw
+lw  has a subset of the features of xw
+lw  has a subset of the features of rw
+jm  has a subset of the features of lm
+jm  has a subset of the features of ʎm
+lm  has a subset of the features of ʎm
+ʃw  has a subset of the features of xw
+ʃw  has a subset of the features of rw
+rt  has a subset of the features of st
+sm  has a subset of the features of xm
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration13/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 13.
+
+Getting consonants...
+p, t, k, q, p', t', k', q', pʰ, tʰ, kʰ, qʰ, s, ʃ, x, h, m, n, ɲ, r, l, ʎ, j, w, ŋ, ɴ, tʃ, sq, jk, ŋk, ɴq, tʃ', tʃʰ, nt, ɲtʃ, rq, ʎp', ŋk', sp, xt, rp, rl, ɴqʰ, sk', xs, mp, nt', rqʰ, ʎq, jk', sk, sq', xʎ, jt, jw, ʃk, mp', rk', rm, lt, ʎp, jʎ, wp, ws, st', ʃkʰ, xr, xtʃ, ɲtʃ', ʎtʃ', jq, jn, xt', xtʃ', rk, rq', lw, jm, jtʃ', sp', xj, mpʰ, rkʰ, lm, jq', jr, ʃw, xp, xw, rw, js, nr, rt, ʎm, st, xn, ms, ʎk, jtʃ, sm, xm
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 14:
+n s	1.3327944861946797
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of sp
+p  has a subset of the features of rp
+p  has a subset of the features of ʎp
+p  has a subset of the features of wp
+p  has a subset of the features of xp
+t  has a subset of the features of xt
+t  has a subset of the features of jt
+t  has a subset of the features of lt
+t  has a subset of the features of rt
+t  has a subset of the features of st
+k  has a subset of the features of jk
+k  has a subset of the features of sk
+k  has a subset of the features of ʃk
+k  has a subset of the features of rk
+k  has a subset of the features of ʎk
+q  has a subset of the features of sq
+q  has a subset of the features of rq
+q  has a subset of the features of ʎq
+q  has a subset of the features of jq
+p'  has a subset of the features of ʎp'
+p'  has a subset of the features of sp'
+t'  has a subset of the features of st'
+t'  has a subset of the features of xt'
+k'  has a subset of the features of sk'
+k'  has a subset of the features of jk'
+k'  has a subset of the features of rk'
+q'  has a subset of the features of sq'
+q'  has a subset of the features of rq'
+q'  has a subset of the features of jq'
+kʰ  has a subset of the features of ʃkʰ
+kʰ  has a subset of the features of rkʰ
+qʰ  has a subset of the features of rqʰ
+s  has a subset of the features of xs
+s  has a subset of the features of ws
+s  has a subset of the features of js
+x  has a subset of the features of xs
+m  has a subset of the features of rm
+m  has a subset of the features of jm
+m  has a subset of the features of lm
+m  has a subset of the features of ʎm
+n  has a subset of the features of jn
+r  has a subset of the features of xr
+r  has a subset of the features of jr
+l  has a subset of the features of rl
+ʎ  has a subset of the features of xʎ
+ʎ  has a subset of the features of jʎ
+j  has a subset of the features of xj
+w  has a subset of the features of jw
+w  has a subset of the features of lw
+w  has a subset of the features of ʃw
+w  has a subset of the features of xw
+w  has a subset of the features of rw
+tʃ  has a subset of the features of xtʃ
+tʃ  has a subset of the features of jtʃ
+sq  has a subset of the features of rq
+sq  has a subset of the features of ʎq
+sq  has a subset of the features of jq
+jk  has a subset of the features of sk
+jk  has a subset of the features of ʃk
+jk  has a subset of the features of rk
+jk  has a subset of the features of ʎk
+tʃ'  has a subset of the features of ʎtʃ'
+tʃ'  has a subset of the features of xtʃ'
+tʃ'  has a subset of the features of jtʃ'
+rq  has a subset of the features of ʎq
+rq  has a subset of the features of jq
+ʎp'  has a subset of the features of sp'
+sp  has a subset of the features of rp
+sp  has a subset of the features of ʎp
+sp  has a subset of the features of wp
+sp  has a subset of the features of xp
+rp  has a subset of the features of ʎp
+rp  has a subset of the features of wp
+rp  has a subset of the features of xp
+sk'  has a subset of the features of jk'
+sk'  has a subset of the features of rk'
+ʎq  has a subset of the features of jq
+jk'  has a subset of the features of rk'
+sk  has a subset of the features of ʃk
+sk  has a subset of the features of rk
+sk  has a subset of the features of ʎk
+sq'  has a subset of the features of rq'
+sq'  has a subset of the features of jq'
+jt  has a subset of the features of lt
+jt  has a subset of the features of rt
+jt  has a subset of the features of st
+jw  has a subset of the features of lw
+jw  has a subset of the features of ʃw
+jw  has a subset of the features of xw
+jw  has a subset of the features of rw
+ʃk  has a subset of the features of rk
+ʃk  has a subset of the features of ʎk
+rm  has a subset of the features of jm
+rm  has a subset of the features of lm
+rm  has a subset of the features of ʎm
+lt  has a subset of the features of rt
+lt  has a subset of the features of st
+ʎp  has a subset of the features of wp
+ʎp  has a subset of the features of xp
+wp  has a subset of the features of xp
+ws  has a subset of the features of js
+st'  has a subset of the features of xt'
+ʃkʰ  has a subset of the features of rkʰ
+ʎtʃ'  has a subset of the features of xtʃ'
+ʎtʃ'  has a subset of the features of jtʃ'
+rk  has a subset of the features of ʎk
+rq'  has a subset of the features of jq'
+lw  has a subset of the features of ʃw
+lw  has a subset of the features of xw
+lw  has a subset of the features of rw
+jm  has a subset of the features of lm
+jm  has a subset of the features of ʎm
+lm  has a subset of the features of ʎm
+ʃw  has a subset of the features of xw
+ʃw  has a subset of the features of rw
+rt  has a subset of the features of st
+sm  has a subset of the features of xm
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration14/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 14.
+
+Getting consonants...
+p, t, k, q, p', t', k', q', pʰ, tʰ, kʰ, qʰ, s, ʃ, x, h, m, n, ɲ, r, l, ʎ, j, w, ŋ, ɴ, tʃ, sq, jk, ŋk, ɴq, tʃ', tʃʰ, nt, ɲtʃ, rq, ʎp', ŋk', sp, xt, rp, rl, ɴqʰ, sk', xs, mp, nt', rqʰ, ʎq, jk', sk, sq', xʎ, jt, jw, ʃk, mp', rk', rm, lt, ʎp, jʎ, wp, ws, st', ʃkʰ, xr, xtʃ, ɲtʃ', ʎtʃ', jq, jn, xt', xtʃ', rk, rq', lw, jm, jtʃ', sp', xj, mpʰ, rkʰ, lm, jq', jr, ʃw, xp, xw, rw, js, nr, rt, ʎm, st, xn, ms, ʎk, jtʃ, sm, xm, ns
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+No complex segments identified in LearningData.txt. That is the final version of your learning data.
+
+Simulation Finished

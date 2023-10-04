@@ -1,0 +1,1 @@
+This rather large word list is one of Kai Schott's IPA word lists created on the basis of OpenOffice spellchecker dictionaries. The list was minimally altered to broaden the transcription; scripts are <a href="https://github.com/gouskova/transcribers/tree/master/german">here</a>.

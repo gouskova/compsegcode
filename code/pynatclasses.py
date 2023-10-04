@@ -121,32 +121,33 @@ def check_feats(featlines, **kwargs):
     
 
 def get_nat_classes(featlines, **kwargs):
-	'''
-	takes as input a tuple: (featnames, seglines) see read_feat_file
-	returns a dictionary of natural classes as keys, and segments as values
-	{-son,+cons: [p, t, n, l, ...]}
-	'''
-	segdict = segs_to_feats(featlines)
-	featdict = make_feat_vectors(featlines)
-	#find all pairs of segs that share feature values:
-	natclasslist = make_feat_vectors.keys()
-	for seg in segdict:
-		for otherseg in segdict:
-			overlap = set(segdict[seg]) & set(segdict[otherseg])
-			if len(overlap)>0 and not overlap in natclasslist:
-				natclasslist.append(list(overlap))
-	natclassdic = {}
-	#compile lists of segments that natural classes expand to:
-	for cl in natclasslist:
-		clname = ','.join(sorted(cl))
-		natclassdic[clname]=[]
-		#for every seg, check if its feature values are in that natural class description
-		for seg in segdict:
-			if set(cl).issubset(set(segdict[seg])): 
-				natclassdic[clname].append(seg)
-	kwargs['message']=f'\nNumber of natural classes: {len(natclassdic)}'
-	msg.env_render(**kwargs)
-	return natclassdic
+    '''
+    takes as input a tuple: (featnames, seglines) see read_feat_file
+    returns a dictionary of natural classes as keys, and segments as values
+    {-son,+cons: [p, t, n, l, ...]}
+    '''
+    segdict = segs_to_feats(featlines)
+    featdict = make_feat_vectors(featlines)
+    #find all pairs of segs that share feature values:
+    natclasslist = featdict.keys()
+    print(natclasslist)
+    for seg in segdict:
+        for otherseg in segdict:
+            overlap = set(segdict[seg]) & set(segdict[otherseg])
+            if len(overlap)>0 and not overlap in natclasslist:
+                natclasslist.append(list(overlap))
+    natclassdic = {}
+    #compile lists of segments that natural classes expand to:
+    for cl in natclasslist:
+        clname = ','.join(sorted(cl))
+        natclassdic[clname]=[]
+        #for every seg, check if its feature values are in that natural class description
+        for seg in segdict:
+            if set(cl).issubset(set(segdict[seg])): 
+                natclassdic[clname].append(seg)
+    kwargs['message']=f'\nNumber of natural classes: {len(natclassdic)}'
+    msg.env_render(**kwargs)
+    return natclassdic
 
 def feat_to_seg_lookup(feats, featdict):
     '''

@@ -1,0 +1,1 @@
+This data set was created by <a href="https://wp.nyu.edu/gilliangallagher/">Gillian Gallagher</a> from the <a href="http://crubadan.org/languages/nv">An Crúbadán</a> corpus for Navajo. English words were excluded.

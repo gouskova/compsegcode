@@ -1,0 +1,22 @@
+
+Searching for complex segments.
+
+No complex segments identified in /home/maria/git/cvenv/compsegsite/compseg/data/german/celex_lemmas/LearningData.txt. That is the final version of your learning data.
+
+Simulation Finished
+Searching for complex segments.
+Inseparability threshold: 1.0
+Alpha level for Fisher's Exact Test: 0.05
+Checking feature file...
+
+The new feature file is well-formed. all the segments can be uniquely identified.
+
+Getting consonants...
+p, b, m, f, v, t, d, s, z, n, l, ʃ, ʒ, ç, χ, ʀ , j, k, g, ŋ, h
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+No complex segments identified in LearningData.txt. That is the final version of your learning data.
+
+Simulation Finished

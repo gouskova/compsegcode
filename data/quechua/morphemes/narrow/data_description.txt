@@ -1,0 +1,1 @@
+This version was created by tokenizing the morpheme-segmented wordlist. Nasal place assimilation is transcribed.

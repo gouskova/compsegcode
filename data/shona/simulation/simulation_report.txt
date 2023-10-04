@@ -1,0 +1,204 @@
+
+Searching for complex segments.
+Inseparability threshold: 1.0
+Alpha level for Fisher's Exact Test: 0.05
+Checking feature file...
+
+The new feature file is well-formed. all the segments can be uniquely identified.
+
+Getting consonants...
+p, t, k, b, d, g, bʱ, dʱ, f, s, ʃ, ʂ, ɦ, vʱ, z, ʐ, ʒ, m, mʱ, n, nʱ, ɲ, ŋ, r, l, j, w, ʋ
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 1:
+ŋ g	7.249640976553279
+t ʃ	5.410042372681859
+d z	3.3769265488646725
+n d	1.9059937656131023
+d ʒ	1.833600062634072
+m b	1.7958036063141891
+p f	1.3745967471276468
+
+Checking learner-generated feature file...
+
+The new feature file is well-formed. all the segments can be uniquely identified.
+
+
+Wrote modified learning data to /iteration1/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 1.
+
+Getting consonants...
+p, t, k, b, d, g, bʱ, dʱ, f, s, ʃ, ʂ, ɦ, vʱ, z, ʐ, ʒ, m, mʱ, n, nʱ, ɲ, ŋ, r, l, j, w, ʋ, pf, tʃ, dz, dʒ, mb, nd, ŋg
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 2:
+ɲ dʒ	12.798187428782542
+b ʋ	9.849158775245474
+t s	5.266917129164324
+n z	4.998380084977668
+mb ʒ	3.379829761332622
+k w	3.335437375880707
+g w	3.0411395170544444
+ɦ w	2.943140155236913
+t ʂ	2.3629575191810788
+dʒ g	1.8135226206770436
+n ʐ	1.576642578763756
+d ʐ	1.4518078552898601
+b w	1.0057865567250106
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+k  has a subset of the features of kw
+b  has a subset of the features of bw
+b  has a subset of the features of bʋ
+g  has a subset of the features of gw
+ɦ  has a subset of the features of ɦw
+bw  has a subset of the features of bʋ
+ɲdʒ  has a subset of the features of mbʒ
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration2/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 2.
+
+Getting consonants...
+p, t, k, b, d, g, bʱ, dʱ, f, s, ʃ, ʂ, ɦ, vʱ, z, ʐ, ʒ, m, mʱ, n, nʱ, ɲ, ŋ, r, l, j, w, ʋ, pf, tʃ, dz, dʒ, mb, nd, ŋg, ts, tʂ, kw, bw, bʋ, dʐ, gw, ɦw, nz, nʐ, ɲdʒ, dʒg, mbʒ
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 3:
+ŋg w	28.06187918585497
+m w	20.291036408303153
+nz gw	6.781952634502184
+s kw	5.376954510829283
+r w	5.121994828227047
+ts kw	5.007796617679825
+ɲdʒ g	4.429901596520644
+ʃ w	4.066107753507144
+p kw	3.716531706568608
+m ʋ	2.891771411566363
+n w	1.7824650457475204
+ɲ ŋ	1.7043764129525294
+dz gw	1.43916099282259
+t kw	1.201031007788708
+tʃ k	1.1192893286513446
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of pkw
+k  has a subset of the features of kw
+k  has a subset of the features of pkw
+k  has a subset of the features of tkw
+b  has a subset of the features of bw
+b  has a subset of the features of bʋ
+g  has a subset of the features of gw
+ʂ  has a subset of the features of ʃw
+ɦ  has a subset of the features of ɦw
+m  has a subset of the features of mw
+m  has a subset of the features of mʋ
+n  has a subset of the features of nw
+ŋ  has a subset of the features of ɲŋ
+r  has a subset of the features of rw
+ŋg  has a subset of the features of ŋgw
+kw  has a subset of the features of pkw
+kw  has a subset of the features of tkw
+bw  has a subset of the features of bʋ
+ɲdʒ  has a subset of the features of mbʒ
+dʒg  has a subset of the features of dzgw
+skw  has a subset of the features of tskw
+mw  has a subset of the features of mʋ
+tʃk  has a subset of the features of tskw
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration3/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 3.
+
+Getting consonants...
+p, t, k, b, d, g, bʱ, dʱ, f, s, ʃ, ʂ, ɦ, vʱ, z, ʐ, ʒ, m, mʱ, n, nʱ, ɲ, ŋ, r, l, j, w, ʋ, pf, tʃ, dz, dʒ, mb, nd, ŋg, ts, tʂ, kw, bw, bʋ, dʐ, gw, ɦw, nz, nʐ, ɲdʒ, dʒg, mbʒ, pkw, tkw, skw, ʃw, mw, mʋ, nw, ɲŋ, rw, tʃk, dzgw, ŋgw, tskw, nzgw, ɲdʒg
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+Found complex segments on iteration 4:
+nd w	268.5747941437683
+ŋ w	167.54451025296794
+z gw	103.49609518550389
+dʒ gw	75.46905043088933
+tʃ kw	26.266118015674415
+s t	2.689862636404817
+
+Checking learner-generated feature file...
+
+The new feature file does not allow certain segments to be distinguished from each other:
+
+
+p  has a subset of the features of pkw
+k  has a subset of the features of kw
+k  has a subset of the features of pkw
+k  has a subset of the features of tkw
+b  has a subset of the features of bw
+b  has a subset of the features of bʋ
+g  has a subset of the features of gw
+ʂ  has a subset of the features of ʃw
+ɦ  has a subset of the features of ɦw
+m  has a subset of the features of mw
+m  has a subset of the features of mʋ
+n  has a subset of the features of nw
+ŋ  has a subset of the features of ɲŋ
+ŋ  has a subset of the features of ŋw
+r  has a subset of the features of rw
+nd  has a subset of the features of ndw
+ŋg  has a subset of the features of ŋgw
+ts  has a subset of the features of st
+kw  has a subset of the features of pkw
+kw  has a subset of the features of tkw
+bw  has a subset of the features of bʋ
+ɲdʒ  has a subset of the features of mbʒ
+dʒg  has a subset of the features of dzgw
+dʒg  has a subset of the features of zgw
+dʒg  has a subset of the features of dʒgw
+skw  has a subset of the features of tskw
+skw  has a subset of the features of tʃkw
+mw  has a subset of the features of mʋ
+ɲŋ  has a subset of the features of ŋw
+tʃk  has a subset of the features of tskw
+tʃk  has a subset of the features of tʃkw
+dzgw  has a subset of the features of zgw
+dzgw  has a subset of the features of dʒgw
+tskw  has a subset of the features of tʃkw
+zgw  has a subset of the features of dʒgw
+
+Warning: some of the segments can no longer be defined using combinations of existing features (e.g.: "k" [+dorsal], "kp" [+dorsal, +labial]. No constraint can refer to just "k" without also referring to [kp]). You will have to fix this by hand later by editing your final feature file yourself.
+
+Wrote modified learning data to /iteration4/LearningData.txt
+
+Your segments are all defined in the feature file.
+Examining data from iteration 4.
+
+Getting consonants...
+p, t, k, b, d, g, bʱ, dʱ, f, s, ʃ, ʂ, ɦ, vʱ, z, ʐ, ʒ, m, mʱ, n, nʱ, ɲ, ŋ, r, l, j, w, ʋ, pf, tʃ, dz, dʒ, mb, nd, ŋg, ts, tʂ, kw, bw, bʋ, dʐ, gw, ɦw, nz, nʐ, ɲdʒ, dʒg, mbʒ, pkw, tkw, skw, ʃw, mw, mʋ, nw, ɲŋ, rw, tʃk, dzgw, ŋgw, tskw, nzgw, ɲdʒg, st, zgw, ŋw, tʃkw, dʒgw, ndw
+
+Getting clusters...
+Counting clusters...
+Calculating probabilities...
+No complex segments identified in LearningData.txt. That is the final version of your learning data.
+
+Simulation Finished

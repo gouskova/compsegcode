@@ -1,0 +1,1 @@
+The inventory of Polish presents challenges for the learner regardless of the nature of the training data. In this simulation, the learner finds two of the affricates in the first iteration, but does not identify any unifiable sequences on the second iteration.

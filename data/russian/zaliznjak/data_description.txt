@@ -1,0 +1,1 @@
+This data set is just the headwords from Zaliznjak's famous paradigm dictionary of Russian, transcribed into IPA using <a href="https://github.com/gouskova/transcribers/tree/master/russian">a script</a>.

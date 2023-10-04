@@ -1,0 +1,4 @@
+
+Searching for complex segments.
+Inseparability threshold: 1.0
+Alpha level for Fisher's Exact Test: 0.05could not open /home/maria/git/cvenv/compsegsite/compseg/data/latin/paradigms/Features.txt

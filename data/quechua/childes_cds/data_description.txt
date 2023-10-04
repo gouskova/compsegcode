@@ -1,0 +1,5 @@
+This corpus is 10633 utterances from the <a href="https://childes.talkbank.org/access/Other/Quechua/Gelman.html">CHILDES database for Peruvian Quechua experiments described in Gelman et al. 2015</a>. We took all the utterances produced by mothers in the experiments, transcribed them from orthography, and removed punctuation and spaces between words.<br>
+
+Note that there are differences between this dialect and the one described in our paper. This one appears to allow stops in coda position, and the data also have not been cleaned of various loanword segments such as /b, d, g, f/. The dataset is also thematically limited, since the mothers and children were discussing picture books. The overall size of the dataset is not large, although it represents 47 different conversations (46 distinct speakers).<br>
+<br>
+Gelman, Susan A., Bruce Mannheim, Carmen Escalante, and Ingrid Sanchez Tapia. "Teleological talk in parent–child conversations in Quechua." First Language 35, no. 4-5 (2015): 359-376.

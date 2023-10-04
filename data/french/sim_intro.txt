@@ -1,0 +1,6 @@
+<p>European French is traditionally analyzed as having no complex segments, even though it is phonotactically fairly permissive, and allows [tʃ] in word-initial position (alongside [ps], [ks] and other stop-fricative clusters). 
+
+<p>By contrast, Quebecois French is described as having the affricates [ts] and [dz], which occur before high front vowels [i, y]. This analysis is supported by some experimental evidence (<a href="https://doi.org/10.1080/14769670500066172">Béland and Kolinsky 2005, Journal of Multilingual Communication Disorders 3:2, pp. 110-117</a>)</p> 
+
+<p>We tried the learner on two data sources: a large corpus of child-directed speech, and the <a href="http://www.lexique.org/">Lexique</a> dictionary of French (where 71K words have transcriptions). We transcribed both datasets as either European French (unmodified transcriptions from Lexique and CHILDES) or as having the affrication rule (replacing t/d with ts/dz before {i, y}). Our learner finds the affricates in the CHILDES corpus, which represents token frequencies in connected speech. Training the learner on the Lexique transcribed as Quebecois does not bring the learner to threshold, although [d z] and [t s] are the most inseparable clusters in the data. (The same
+result obtains when we train the learner on CHILDES tokenized by word; no complex segments are found.)</p>

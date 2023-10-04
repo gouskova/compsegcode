@@ -1,0 +1,1 @@
+The learner does not find any complex segments to unify when trained on type frequencies from child-directed speech in Quebecois. Note that just as in Lexique, [dz] and [ts] are on top in terms of inseparability (though well below the threshold of 1).

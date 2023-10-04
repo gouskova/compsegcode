@@ -1,0 +1,1 @@
+This dataset is a "flattened" paradigm list that was originally distributed by Adam Albright and Bruce Hayes; see <a href="https://linguistics.ucla.edu/people/hayes/learning/latin.zip">Bruce Hayes's page</a>.
