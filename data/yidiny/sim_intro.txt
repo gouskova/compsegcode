@@ -1,0 +1,13 @@
+Yidiɲ has figured prominently in discussions of suppletive allomorphy, metrical structure, and reduplication. One of the typologically unusual features of this language is that it supposedly reduplicates by copying syllabification:
+
+mula-mulari 'initiated men'
+gindal-gindalba 'lizards'
+
+But homorganic nasal-stop clusters are not broken up in copying:
+
+maɟi-maɟinda-n 'keep walking up'
+
+In his (1977) grammar of Yidiɲ, Dixon says, "a homorganic cluster [mb] is in some cases felt to be functioning as a single phonological unit", but he does not posit prenasalized stops in his inventory for the language. In this simulation, his lexicon of about a 1000 stems and affixes is analyzed, and Dixon's conjecture is supported: NC clusters are unified into prenasalized stops. Somewhat oddly, so are [rg] clusters; possibly further some morphological segmentation would
+clarify their status. 
+
+This simulation was conducted in 2025 for a project on Yidiɲ reduplication.
